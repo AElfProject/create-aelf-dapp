@@ -57,4 +57,12 @@ export const menuList: IMenuItemData[] = [
     label: 'socket',
     href: '/demos/socket',
   },
+  {
+    label: 'Graphql',
+    href: '/demos/graphql/server',
+  },
+  {
+    label: 'API All in one',
+    href: '/demos/api-all-in-one',
+  },
 ];
