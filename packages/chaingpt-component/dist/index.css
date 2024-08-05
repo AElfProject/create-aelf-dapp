@@ -1,0 +1,2004 @@
+/*corePlugins: {*/
+/*    preflight: false,*/
+/*},*/
+/* We will not import the css of @tailwind base */
+/* https://tailwindcss.com/docs/preflight */
+*, ::before, ::after {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x:  ;
+    --tw-pan-y:  ;
+    --tw-pinch-zoom:  ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
+    --tw-ordinal:  ;
+    --tw-slashed-zero:  ;
+    --tw-numeric-figure:  ;
+    --tw-numeric-spacing:  ;
+    --tw-numeric-fraction:  ;
+    --tw-ring-inset:  ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur:  ;
+    --tw-brightness:  ;
+    --tw-contrast:  ;
+    --tw-grayscale:  ;
+    --tw-hue-rotate:  ;
+    --tw-invert:  ;
+    --tw-saturate:  ;
+    --tw-sepia:  ;
+    --tw-drop-shadow:  ;
+    --tw-backdrop-blur:  ;
+    --tw-backdrop-brightness:  ;
+    --tw-backdrop-contrast:  ;
+    --tw-backdrop-grayscale:  ;
+    --tw-backdrop-hue-rotate:  ;
+    --tw-backdrop-invert:  ;
+    --tw-backdrop-opacity:  ;
+    --tw-backdrop-saturate:  ;
+    --tw-backdrop-sepia:  ;
+    --tw-contain-size:  ;
+    --tw-contain-layout:  ;
+    --tw-contain-paint:  ;
+    --tw-contain-style:  
+}
+::backdrop {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x:  ;
+    --tw-pan-y:  ;
+    --tw-pinch-zoom:  ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
+    --tw-ordinal:  ;
+    --tw-slashed-zero:  ;
+    --tw-numeric-figure:  ;
+    --tw-numeric-spacing:  ;
+    --tw-numeric-fraction:  ;
+    --tw-ring-inset:  ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur:  ;
+    --tw-brightness:  ;
+    --tw-contrast:  ;
+    --tw-grayscale:  ;
+    --tw-hue-rotate:  ;
+    --tw-invert:  ;
+    --tw-saturate:  ;
+    --tw-sepia:  ;
+    --tw-drop-shadow:  ;
+    --tw-backdrop-blur:  ;
+    --tw-backdrop-brightness:  ;
+    --tw-backdrop-contrast:  ;
+    --tw-backdrop-grayscale:  ;
+    --tw-backdrop-hue-rotate:  ;
+    --tw-backdrop-invert:  ;
+    --tw-backdrop-opacity:  ;
+    --tw-backdrop-saturate:  ;
+    --tw-backdrop-sepia:  ;
+    --tw-contain-size:  ;
+    --tw-contain-layout:  ;
+    --tw-contain-paint:  ;
+    --tw-contain-style:  
+}
+._container_rbh39_3 {
+    width: 100%
+}
+@media (min-width: 640px) {
+    ._container_rbh39_3 {
+        max-width: 640px
+    }
+}
+@media (min-width: 768px) {
+    ._container_rbh39_3 {
+        max-width: 768px
+    }
+}
+@media (min-width: 1024px) {
+    ._container_rbh39_3 {
+        max-width: 1024px
+    }
+}
+@media (min-width: 1280px) {
+    ._container_rbh39_3 {
+        max-width: 1280px
+    }
+}
+@media (min-width: 1536px) {
+    ._container_rbh39_3 {
+        max-width: 1536px
+    }
+}
+/*#tailContainer {*/
+/*    @apply @tailwind base;*/
+/*}*/
+/*@layer base {*/
+/*    #tailContainer {*/
+/*        @apply @tailwind base;*/
+/*    }*/
+/*}*/
+._cursorPointer_rbh39_1 {
+    cursor: pointer
+}
+._container_rbh39_3 {
+    height: 100px;
+    width: 100px;
+    border-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: rgb(204 204 204 / var(--tw-border-opacity))
+}
+._logo_1m0mc_1 {
+    height: 64px;
+    width: 64px;
+}
+._box_1n1ql_1 {
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.16);
+    height: 74px;
+    width: 229px;
+    font-size: 14px;
+    padding: 16px;
+}
+/*corePlugins: {*/
+/*    preflight: false,*/
+/*},*/
+/* We will not import the css of @tailwind base */
+/* https://tailwindcss.com/docs/preflight */
+*, ::before, ::after {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x:  ;
+    --tw-pan-y:  ;
+    --tw-pinch-zoom:  ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
+    --tw-ordinal:  ;
+    --tw-slashed-zero:  ;
+    --tw-numeric-figure:  ;
+    --tw-numeric-spacing:  ;
+    --tw-numeric-fraction:  ;
+    --tw-ring-inset:  ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur:  ;
+    --tw-brightness:  ;
+    --tw-contrast:  ;
+    --tw-grayscale:  ;
+    --tw-hue-rotate:  ;
+    --tw-invert:  ;
+    --tw-saturate:  ;
+    --tw-sepia:  ;
+    --tw-drop-shadow:  ;
+    --tw-backdrop-blur:  ;
+    --tw-backdrop-brightness:  ;
+    --tw-backdrop-contrast:  ;
+    --tw-backdrop-grayscale:  ;
+    --tw-backdrop-hue-rotate:  ;
+    --tw-backdrop-invert:  ;
+    --tw-backdrop-opacity:  ;
+    --tw-backdrop-saturate:  ;
+    --tw-backdrop-sepia:  ;
+    --tw-contain-size:  ;
+    --tw-contain-layout:  ;
+    --tw-contain-paint:  ;
+    --tw-contain-style:  
+}
+::backdrop {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x:  ;
+    --tw-pan-y:  ;
+    --tw-pinch-zoom:  ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
+    --tw-ordinal:  ;
+    --tw-slashed-zero:  ;
+    --tw-numeric-figure:  ;
+    --tw-numeric-spacing:  ;
+    --tw-numeric-fraction:  ;
+    --tw-ring-inset:  ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur:  ;
+    --tw-brightness:  ;
+    --tw-contrast:  ;
+    --tw-grayscale:  ;
+    --tw-hue-rotate:  ;
+    --tw-invert:  ;
+    --tw-saturate:  ;
+    --tw-sepia:  ;
+    --tw-drop-shadow:  ;
+    --tw-backdrop-blur:  ;
+    --tw-backdrop-brightness:  ;
+    --tw-backdrop-contrast:  ;
+    --tw-backdrop-grayscale:  ;
+    --tw-backdrop-hue-rotate:  ;
+    --tw-backdrop-invert:  ;
+    --tw-backdrop-opacity:  ;
+    --tw-backdrop-saturate:  ;
+    --tw-backdrop-sepia:  ;
+    --tw-contain-size:  ;
+    --tw-contain-layout:  ;
+    --tw-contain-paint:  ;
+    --tw-contain-style:  
+}
+._container_arsdy_1 {
+    width: 100%
+}
+@media (min-width: 640px) {
+    ._container_arsdy_1 {
+        max-width: 640px
+    }
+}
+@media (min-width: 768px) {
+    ._container_arsdy_1 {
+        max-width: 768px
+    }
+}
+@media (min-width: 1024px) {
+    ._container_arsdy_1 {
+        max-width: 1024px
+    }
+}
+@media (min-width: 1280px) {
+    ._container_arsdy_1 {
+        max-width: 1280px
+    }
+}
+@media (min-width: 1536px) {
+    ._container_arsdy_1 {
+        max-width: 1536px
+    }
+}
+/*#tailContainer {*/
+/*    @apply @tailwind base;*/
+/*}*/
+/*@layer base {*/
+/*    #tailContainer {*/
+/*        @apply @tailwind base;*/
+/*    }*/
+/*}*/
+._cursorPointer_arsdy_1 {
+    cursor: pointer
+}
+._questionBox_arsdy_3 {
+    margin-bottom: 1rem;
+    display: flex;
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end
+}
+._questionInnerBox_arsdy_7 {
+    height: auto;
+    width: auto;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 13px;
+    border-radius: 12px 12px 4px 12px;
+    border-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: rgb(224 224 224 / var(--tw-border-opacity))
+}
+/*corePlugins: {*/
+/*    preflight: false,*/
+/*},*/
+/* We will not import the css of @tailwind base */
+/* https://tailwindcss.com/docs/preflight */
+*, ::before, ::after {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x:  ;
+    --tw-pan-y:  ;
+    --tw-pinch-zoom:  ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
+    --tw-ordinal:  ;
+    --tw-slashed-zero:  ;
+    --tw-numeric-figure:  ;
+    --tw-numeric-spacing:  ;
+    --tw-numeric-fraction:  ;
+    --tw-ring-inset:  ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur:  ;
+    --tw-brightness:  ;
+    --tw-contrast:  ;
+    --tw-grayscale:  ;
+    --tw-hue-rotate:  ;
+    --tw-invert:  ;
+    --tw-saturate:  ;
+    --tw-sepia:  ;
+    --tw-drop-shadow:  ;
+    --tw-backdrop-blur:  ;
+    --tw-backdrop-brightness:  ;
+    --tw-backdrop-contrast:  ;
+    --tw-backdrop-grayscale:  ;
+    --tw-backdrop-hue-rotate:  ;
+    --tw-backdrop-invert:  ;
+    --tw-backdrop-opacity:  ;
+    --tw-backdrop-saturate:  ;
+    --tw-backdrop-sepia:  ;
+    --tw-contain-size:  ;
+    --tw-contain-layout:  ;
+    --tw-contain-paint:  ;
+    --tw-contain-style:  
+}
+::backdrop {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x:  ;
+    --tw-pan-y:  ;
+    --tw-pinch-zoom:  ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
+    --tw-ordinal:  ;
+    --tw-slashed-zero:  ;
+    --tw-numeric-figure:  ;
+    --tw-numeric-spacing:  ;
+    --tw-numeric-fraction:  ;
+    --tw-ring-inset:  ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur:  ;
+    --tw-brightness:  ;
+    --tw-contrast:  ;
+    --tw-grayscale:  ;
+    --tw-hue-rotate:  ;
+    --tw-invert:  ;
+    --tw-saturate:  ;
+    --tw-sepia:  ;
+    --tw-drop-shadow:  ;
+    --tw-backdrop-blur:  ;
+    --tw-backdrop-brightness:  ;
+    --tw-backdrop-contrast:  ;
+    --tw-backdrop-grayscale:  ;
+    --tw-backdrop-hue-rotate:  ;
+    --tw-backdrop-invert:  ;
+    --tw-backdrop-opacity:  ;
+    --tw-backdrop-saturate:  ;
+    --tw-backdrop-sepia:  ;
+    --tw-contain-size:  ;
+    --tw-contain-layout:  ;
+    --tw-contain-paint:  ;
+    --tw-contain-style:  
+}
+._container_1txyw_3 {
+    width: 100%
+}
+@media (min-width: 640px) {
+    ._container_1txyw_3 {
+        max-width: 640px
+    }
+}
+@media (min-width: 768px) {
+    ._container_1txyw_3 {
+        max-width: 768px
+    }
+}
+@media (min-width: 1024px) {
+    ._container_1txyw_3 {
+        max-width: 1024px
+    }
+}
+@media (min-width: 1280px) {
+    ._container_1txyw_3 {
+        max-width: 1280px
+    }
+}
+@media (min-width: 1536px) {
+    ._container_1txyw_3 {
+        max-width: 1536px
+    }
+}
+/*#tailContainer {*/
+/*    @apply @tailwind base;*/
+/*}*/
+/*@layer base {*/
+/*    #tailContainer {*/
+/*        @apply @tailwind base;*/
+/*    }*/
+/*}*/
+._cursorPointer_1txyw_1 {
+    cursor: pointer
+}
+._container_1txyw_3 {
+    margin-bottom: 1rem;
+    display: flex;
+    height: auto;
+    width: auto;
+    flex-direction: column;
+    align-items: flex-start
+}
+._innerContainer_1txyw_7 {
+    display: flex;
+    height: auto;
+    width: auto;
+    flex-direction: row;
+    font-size: 0.875rem;
+    line-height: 1.25rem
+}
+@media (min-width: 1024px) {
+    ._innerContainer_1txyw_7 {
+        font-size: 1rem;
+        line-height: 1.5rem
+    }
+}
+._childrenContainer_1txyw_11 {
+    margin-left: 8px;
+    flex: 1 1 0%;
+    font-size: 13px
+}
+._logoImage_1txyw_15 {
+    height: 32px;
+    width: 32px
+}
+/*corePlugins: {*/
+/*    preflight: false,*/
+/*},*/
+/* We will not import the css of @tailwind base */
+/* https://tailwindcss.com/docs/preflight */
+*, ::before, ::after {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x:  ;
+    --tw-pan-y:  ;
+    --tw-pinch-zoom:  ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
+    --tw-ordinal:  ;
+    --tw-slashed-zero:  ;
+    --tw-numeric-figure:  ;
+    --tw-numeric-spacing:  ;
+    --tw-numeric-fraction:  ;
+    --tw-ring-inset:  ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur:  ;
+    --tw-brightness:  ;
+    --tw-contrast:  ;
+    --tw-grayscale:  ;
+    --tw-hue-rotate:  ;
+    --tw-invert:  ;
+    --tw-saturate:  ;
+    --tw-sepia:  ;
+    --tw-drop-shadow:  ;
+    --tw-backdrop-blur:  ;
+    --tw-backdrop-brightness:  ;
+    --tw-backdrop-contrast:  ;
+    --tw-backdrop-grayscale:  ;
+    --tw-backdrop-hue-rotate:  ;
+    --tw-backdrop-invert:  ;
+    --tw-backdrop-opacity:  ;
+    --tw-backdrop-saturate:  ;
+    --tw-backdrop-sepia:  ;
+    --tw-contain-size:  ;
+    --tw-contain-layout:  ;
+    --tw-contain-paint:  ;
+    --tw-contain-style:  ;
+}
+::backdrop {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x:  ;
+    --tw-pan-y:  ;
+    --tw-pinch-zoom:  ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
+    --tw-ordinal:  ;
+    --tw-slashed-zero:  ;
+    --tw-numeric-figure:  ;
+    --tw-numeric-spacing:  ;
+    --tw-numeric-fraction:  ;
+    --tw-ring-inset:  ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur:  ;
+    --tw-brightness:  ;
+    --tw-contrast:  ;
+    --tw-grayscale:  ;
+    --tw-hue-rotate:  ;
+    --tw-invert:  ;
+    --tw-saturate:  ;
+    --tw-sepia:  ;
+    --tw-drop-shadow:  ;
+    --tw-backdrop-blur:  ;
+    --tw-backdrop-brightness:  ;
+    --tw-backdrop-contrast:  ;
+    --tw-backdrop-grayscale:  ;
+    --tw-backdrop-hue-rotate:  ;
+    --tw-backdrop-invert:  ;
+    --tw-backdrop-opacity:  ;
+    --tw-backdrop-saturate:  ;
+    --tw-backdrop-sepia:  ;
+    --tw-contain-size:  ;
+    --tw-contain-layout:  ;
+    --tw-contain-paint:  ;
+    --tw-contain-style:  ;
+}
+._container_1yyfw_1 {
+    width: 100%;
+}
+@media (min-width: 640px) {
+    ._container_1yyfw_1 {
+        max-width: 640px;
+    }
+}
+@media (min-width: 768px) {
+    ._container_1yyfw_1 {
+        max-width: 768px;
+    }
+}
+@media (min-width: 1024px) {
+    ._container_1yyfw_1 {
+        max-width: 1024px;
+    }
+}
+@media (min-width: 1280px) {
+    ._container_1yyfw_1 {
+        max-width: 1280px;
+    }
+}
+@media (min-width: 1536px) {
+    ._container_1yyfw_1 {
+        max-width: 1536px;
+    }
+}
+/*#tailContainer {*/
+/*    @apply @tailwind base;*/
+/*}*/
+/*@layer base {*/
+/*    #tailContainer {*/
+/*        @apply @tailwind base;*/
+/*    }*/
+/*}*/
+._cursorPointer_1yyfw_1 {
+    cursor: pointer;
+}
+._loadingFlex_1yyfw_3 {
+    display: flex;
+}
+._loadingHidden_1yyfw_7 {
+    display: none;
+}
+/**
+ * ==============================================
+ * Dot Typing
+ * ==============================================
+ */
+._chainGptDotTypingStage_1yyfw_16 {
+    width: 46px;
+    height: 32px;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 15px 0;
+    margin: 0;
+    overflow: hidden;
+}
+._chainGptDotTyping_1yyfw_16 {
+    position: relative;
+    left: -9999px;
+    width: 6px;
+    height: 6px;
+    border-radius: 5px;
+    background-color: #808080;
+    color: #808080;
+    box-shadow: 9984px 0 0 0 #808080, 9999px 0 0 0 #808080, 10014px 0 0 0 #808080;
+    animation: _chainGptDotTyping_1yyfw_16 1.5s infinite linear;
+}
+@keyframes _chainGptDotTyping_1yyfw_16 {
+    0% {
+        box-shadow: 9984px 0 0 0 #808080, 9999px 0 0 0 #808080, 10014px 0 0 0 #808080;
+    }
+    16.667% {
+        box-shadow: 9984px -10px 0 0 #808080, 9999px 0 0 0 #808080, 10014px 0 0 0 #808080;
+    }
+    33.333% {
+        box-shadow: 9984px 0 0 0 #808080, 9999px 0 0 0 #808080, 10014px 0 0 0 #808080;
+    }
+    50% {
+        box-shadow: 9984px 0 0 0 #808080, 9999px -10px 0 0 #808080, 10014px 0 0 0 #808080;
+    }
+    66.667% {
+        box-shadow: 9984px 0 0 0 #808080, 9999px 0 0 0 #808080, 10014px 0 0 0 #808080;
+    }
+    83.333% {
+        box-shadow: 9984px 0 0 0 #808080, 9999px 0 0 0 #808080, 10014px -10px 0 0 #808080;
+    }
+    100% {
+        box-shadow: 9984px 0 0 0 #808080, 9999px 0 0 0 #808080, 10014px 0 0 0 #808080;
+    }
+}
+/*corePlugins: {*/
+/*    preflight: false,*/
+/*},*/
+/* We will not import the css of @tailwind base */
+/* https://tailwindcss.com/docs/preflight */
+*, ::before, ::after {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x:  ;
+    --tw-pan-y:  ;
+    --tw-pinch-zoom:  ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
+    --tw-ordinal:  ;
+    --tw-slashed-zero:  ;
+    --tw-numeric-figure:  ;
+    --tw-numeric-spacing:  ;
+    --tw-numeric-fraction:  ;
+    --tw-ring-inset:  ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur:  ;
+    --tw-brightness:  ;
+    --tw-contrast:  ;
+    --tw-grayscale:  ;
+    --tw-hue-rotate:  ;
+    --tw-invert:  ;
+    --tw-saturate:  ;
+    --tw-sepia:  ;
+    --tw-drop-shadow:  ;
+    --tw-backdrop-blur:  ;
+    --tw-backdrop-brightness:  ;
+    --tw-backdrop-contrast:  ;
+    --tw-backdrop-grayscale:  ;
+    --tw-backdrop-hue-rotate:  ;
+    --tw-backdrop-invert:  ;
+    --tw-backdrop-opacity:  ;
+    --tw-backdrop-saturate:  ;
+    --tw-backdrop-sepia:  ;
+    --tw-contain-size:  ;
+    --tw-contain-layout:  ;
+    --tw-contain-paint:  ;
+    --tw-contain-style:  ;
+}
+::backdrop {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x:  ;
+    --tw-pan-y:  ;
+    --tw-pinch-zoom:  ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
+    --tw-ordinal:  ;
+    --tw-slashed-zero:  ;
+    --tw-numeric-figure:  ;
+    --tw-numeric-spacing:  ;
+    --tw-numeric-fraction:  ;
+    --tw-ring-inset:  ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur:  ;
+    --tw-brightness:  ;
+    --tw-contrast:  ;
+    --tw-grayscale:  ;
+    --tw-hue-rotate:  ;
+    --tw-invert:  ;
+    --tw-saturate:  ;
+    --tw-sepia:  ;
+    --tw-drop-shadow:  ;
+    --tw-backdrop-blur:  ;
+    --tw-backdrop-brightness:  ;
+    --tw-backdrop-contrast:  ;
+    --tw-backdrop-grayscale:  ;
+    --tw-backdrop-hue-rotate:  ;
+    --tw-backdrop-invert:  ;
+    --tw-backdrop-opacity:  ;
+    --tw-backdrop-saturate:  ;
+    --tw-backdrop-sepia:  ;
+    --tw-contain-size:  ;
+    --tw-contain-layout:  ;
+    --tw-contain-paint:  ;
+    --tw-contain-style:  ;
+}
+._container_1gv8g_2 {
+    width: 100%;
+}
+@media (min-width: 640px) {
+    ._container_1gv8g_2 {
+        max-width: 640px;
+    }
+}
+@media (min-width: 768px) {
+    ._container_1gv8g_2 {
+        max-width: 768px;
+    }
+}
+@media (min-width: 1024px) {
+    ._container_1gv8g_2 {
+        max-width: 1024px;
+    }
+}
+@media (min-width: 1280px) {
+    ._container_1gv8g_2 {
+        max-width: 1280px;
+    }
+}
+@media (min-width: 1536px) {
+    ._container_1gv8g_2 {
+        max-width: 1536px;
+    }
+}
+/*#tailContainer {*/
+/*    @apply @tailwind base;*/
+/*}*/
+/*@layer base {*/
+/*    #tailContainer {*/
+/*        @apply @tailwind base;*/
+/*    }*/
+/*}*/
+._cursorPointer_1gv8g_1 {
+    cursor: pointer;
+}
+._container_1gv8g_2 {
+    display: flex;
+    padding: 0 16px 0 16px;
+}
+._inputContainer_1gv8g_7 {
+    display: flex;
+    flex: 1;
+}
+._chainGptInputPlaceholder_1gv8g_12 {
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 14px 16px 14px 0;
+    box-sizing: border-box;
+    height: 60px;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+._chainGptInputPlaceholder_1gv8g_12::-moz-placeholder {
+    color: #D6D6D6;
+}
+._chainGptInputPlaceholder_1gv8g_12::placeholder {
+    color: #D6D6D6;
+}
+._image_1gv8g_28 {
+    width: 24px;
+    display: flex;
+    justify-content: center;
+}
+/*corePlugins: {*/
+/*    preflight: false,*/
+/*},*/
+/* We will not import the css of @tailwind base */
+/* https://tailwindcss.com/docs/preflight */
+*, ::before, ::after {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x:  ;
+    --tw-pan-y:  ;
+    --tw-pinch-zoom:  ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
+    --tw-ordinal:  ;
+    --tw-slashed-zero:  ;
+    --tw-numeric-figure:  ;
+    --tw-numeric-spacing:  ;
+    --tw-numeric-fraction:  ;
+    --tw-ring-inset:  ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur:  ;
+    --tw-brightness:  ;
+    --tw-contrast:  ;
+    --tw-grayscale:  ;
+    --tw-hue-rotate:  ;
+    --tw-invert:  ;
+    --tw-saturate:  ;
+    --tw-sepia:  ;
+    --tw-drop-shadow:  ;
+    --tw-backdrop-blur:  ;
+    --tw-backdrop-brightness:  ;
+    --tw-backdrop-contrast:  ;
+    --tw-backdrop-grayscale:  ;
+    --tw-backdrop-hue-rotate:  ;
+    --tw-backdrop-invert:  ;
+    --tw-backdrop-opacity:  ;
+    --tw-backdrop-saturate:  ;
+    --tw-backdrop-sepia:  ;
+    --tw-contain-size:  ;
+    --tw-contain-layout:  ;
+    --tw-contain-paint:  ;
+    --tw-contain-style:  ;
+}
+::backdrop {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x:  ;
+    --tw-pan-y:  ;
+    --tw-pinch-zoom:  ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
+    --tw-ordinal:  ;
+    --tw-slashed-zero:  ;
+    --tw-numeric-figure:  ;
+    --tw-numeric-spacing:  ;
+    --tw-numeric-fraction:  ;
+    --tw-ring-inset:  ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur:  ;
+    --tw-brightness:  ;
+    --tw-contrast:  ;
+    --tw-grayscale:  ;
+    --tw-hue-rotate:  ;
+    --tw-invert:  ;
+    --tw-saturate:  ;
+    --tw-sepia:  ;
+    --tw-drop-shadow:  ;
+    --tw-backdrop-blur:  ;
+    --tw-backdrop-brightness:  ;
+    --tw-backdrop-contrast:  ;
+    --tw-backdrop-grayscale:  ;
+    --tw-backdrop-hue-rotate:  ;
+    --tw-backdrop-invert:  ;
+    --tw-backdrop-opacity:  ;
+    --tw-backdrop-saturate:  ;
+    --tw-backdrop-sepia:  ;
+    --tw-contain-size:  ;
+    --tw-contain-layout:  ;
+    --tw-contain-paint:  ;
+    --tw-contain-style:  ;
+}
+._container_1v7dh_3 {
+    width: 100%;
+}
+@media (min-width: 640px) {
+    ._container_1v7dh_3 {
+        max-width: 640px;
+    }
+}
+@media (min-width: 768px) {
+    ._container_1v7dh_3 {
+        max-width: 768px;
+    }
+}
+@media (min-width: 1024px) {
+    ._container_1v7dh_3 {
+        max-width: 1024px;
+    }
+}
+@media (min-width: 1280px) {
+    ._container_1v7dh_3 {
+        max-width: 1280px;
+    }
+}
+@media (min-width: 1536px) {
+    ._container_1v7dh_3 {
+        max-width: 1536px;
+    }
+}
+/*#tailContainer {*/
+/*    @apply @tailwind base;*/
+/*}*/
+/*@layer base {*/
+/*    #tailContainer {*/
+/*        @apply @tailwind base;*/
+/*    }*/
+/*}*/
+._cursorPointer_1v7dh_1 {
+    cursor: pointer;
+}
+._container_1v7dh_3 {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+._messageBox_1v7dh_7 {
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+._messageBox_1v7dh_7::-webkit-scrollbar {
+    display: none;
+}
+/*.messageBoxOverflow {*/
+/*    !*@app w-full h-full flex-1 overflow-scroll;*!*/
+/*    @app w-full h-full flex-1;*/
+/*}*/
+._messageBoxInner_1v7dh_21 {
+    width: 100%;
+    white-space: pre-wrap;
+    text-wrap: wrap;
+    overflow-wrap: normal;
+    word-break: normal;
+    padding: 8px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+._inputBox_1v7dh_25 {
+    height: 60px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+._answerBlock_1v7dh_29 {
+    display: block;
+}
+._answerHidden_1v7dh_33 {
+    display: none;
+}
+/*corePlugins: {*/
+/*    preflight: false,*/
+/*},*/
+/* We will not import the css of @tailwind base */
+/* https://tailwindcss.com/docs/preflight */
+*, ::before, ::after {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x:  ;
+    --tw-pan-y:  ;
+    --tw-pinch-zoom:  ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
+    --tw-ordinal:  ;
+    --tw-slashed-zero:  ;
+    --tw-numeric-figure:  ;
+    --tw-numeric-spacing:  ;
+    --tw-numeric-fraction:  ;
+    --tw-ring-inset:  ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur:  ;
+    --tw-brightness:  ;
+    --tw-contrast:  ;
+    --tw-grayscale:  ;
+    --tw-hue-rotate:  ;
+    --tw-invert:  ;
+    --tw-saturate:  ;
+    --tw-sepia:  ;
+    --tw-drop-shadow:  ;
+    --tw-backdrop-blur:  ;
+    --tw-backdrop-brightness:  ;
+    --tw-backdrop-contrast:  ;
+    --tw-backdrop-grayscale:  ;
+    --tw-backdrop-hue-rotate:  ;
+    --tw-backdrop-invert:  ;
+    --tw-backdrop-opacity:  ;
+    --tw-backdrop-saturate:  ;
+    --tw-backdrop-sepia:  ;
+    --tw-contain-size:  ;
+    --tw-contain-layout:  ;
+    --tw-contain-paint:  ;
+    --tw-contain-style:  
+}
+::backdrop {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x:  ;
+    --tw-pan-y:  ;
+    --tw-pinch-zoom:  ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
+    --tw-ordinal:  ;
+    --tw-slashed-zero:  ;
+    --tw-numeric-figure:  ;
+    --tw-numeric-spacing:  ;
+    --tw-numeric-fraction:  ;
+    --tw-ring-inset:  ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur:  ;
+    --tw-brightness:  ;
+    --tw-contrast:  ;
+    --tw-grayscale:  ;
+    --tw-hue-rotate:  ;
+    --tw-invert:  ;
+    --tw-saturate:  ;
+    --tw-sepia:  ;
+    --tw-drop-shadow:  ;
+    --tw-backdrop-blur:  ;
+    --tw-backdrop-brightness:  ;
+    --tw-backdrop-contrast:  ;
+    --tw-backdrop-grayscale:  ;
+    --tw-backdrop-hue-rotate:  ;
+    --tw-backdrop-invert:  ;
+    --tw-backdrop-opacity:  ;
+    --tw-backdrop-saturate:  ;
+    --tw-backdrop-sepia:  ;
+    --tw-contain-size:  ;
+    --tw-contain-layout:  ;
+    --tw-contain-paint:  ;
+    --tw-contain-style:  
+}
+._container_gs954_1 {
+    width: 100%
+}
+@media (min-width: 640px) {
+    ._container_gs954_1 {
+        max-width: 640px
+    }
+}
+@media (min-width: 768px) {
+    ._container_gs954_1 {
+        max-width: 768px
+    }
+}
+@media (min-width: 1024px) {
+    ._container_gs954_1 {
+        max-width: 1024px
+    }
+}
+@media (min-width: 1280px) {
+    ._container_gs954_1 {
+        max-width: 1280px
+    }
+}
+@media (min-width: 1536px) {
+    ._container_gs954_1 {
+        max-width: 1536px
+    }
+}
+/*#tailContainer {*/
+/*    @apply @tailwind base;*/
+/*}*/
+/*@layer base {*/
+/*    #tailContainer {*/
+/*        @apply @tailwind base;*/
+/*    }*/
+/*}*/
+._cursorPointer_gs954_1 {
+    cursor: pointer
+}
+._blank_gs954_3 {
+    height: 16px;
+    width: 1px
+}
+._textListFlex_gs954_7 {
+    display: flex
+}
+._textListSpan_gs954_11 {
+    font-size: 24px
+}
+/*corePlugins: {*/
+/*    preflight: false,*/
+/*},*/
+/* We will not import the css of @tailwind base */
+/* https://tailwindcss.com/docs/preflight */
+*, ::before, ::after {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x:  ;
+    --tw-pan-y:  ;
+    --tw-pinch-zoom:  ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
+    --tw-ordinal:  ;
+    --tw-slashed-zero:  ;
+    --tw-numeric-figure:  ;
+    --tw-numeric-spacing:  ;
+    --tw-numeric-fraction:  ;
+    --tw-ring-inset:  ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur:  ;
+    --tw-brightness:  ;
+    --tw-contrast:  ;
+    --tw-grayscale:  ;
+    --tw-hue-rotate:  ;
+    --tw-invert:  ;
+    --tw-saturate:  ;
+    --tw-sepia:  ;
+    --tw-drop-shadow:  ;
+    --tw-backdrop-blur:  ;
+    --tw-backdrop-brightness:  ;
+    --tw-backdrop-contrast:  ;
+    --tw-backdrop-grayscale:  ;
+    --tw-backdrop-hue-rotate:  ;
+    --tw-backdrop-invert:  ;
+    --tw-backdrop-opacity:  ;
+    --tw-backdrop-saturate:  ;
+    --tw-backdrop-sepia:  ;
+    --tw-contain-size:  ;
+    --tw-contain-layout:  ;
+    --tw-contain-paint:  ;
+    --tw-contain-style:  
+}
+::backdrop {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x:  ;
+    --tw-pan-y:  ;
+    --tw-pinch-zoom:  ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
+    --tw-ordinal:  ;
+    --tw-slashed-zero:  ;
+    --tw-numeric-figure:  ;
+    --tw-numeric-spacing:  ;
+    --tw-numeric-fraction:  ;
+    --tw-ring-inset:  ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur:  ;
+    --tw-brightness:  ;
+    --tw-contrast:  ;
+    --tw-grayscale:  ;
+    --tw-hue-rotate:  ;
+    --tw-invert:  ;
+    --tw-saturate:  ;
+    --tw-sepia:  ;
+    --tw-drop-shadow:  ;
+    --tw-backdrop-blur:  ;
+    --tw-backdrop-brightness:  ;
+    --tw-backdrop-contrast:  ;
+    --tw-backdrop-grayscale:  ;
+    --tw-backdrop-hue-rotate:  ;
+    --tw-backdrop-invert:  ;
+    --tw-backdrop-opacity:  ;
+    --tw-backdrop-saturate:  ;
+    --tw-backdrop-sepia:  ;
+    --tw-contain-size:  ;
+    --tw-contain-layout:  ;
+    --tw-contain-paint:  ;
+    --tw-contain-style:  
+}
+._container_1fc8a_1 {
+    width: 100%
+}
+@media (min-width: 640px) {
+    ._container_1fc8a_1 {
+        max-width: 640px
+    }
+}
+@media (min-width: 768px) {
+    ._container_1fc8a_1 {
+        max-width: 768px
+    }
+}
+@media (min-width: 1024px) {
+    ._container_1fc8a_1 {
+        max-width: 1024px
+    }
+}
+@media (min-width: 1280px) {
+    ._container_1fc8a_1 {
+        max-width: 1280px
+    }
+}
+@media (min-width: 1536px) {
+    ._container_1fc8a_1 {
+        max-width: 1536px
+    }
+}
+/*#tailContainer {*/
+/*    @apply @tailwind base;*/
+/*}*/
+/*@layer base {*/
+/*    #tailContainer {*/
+/*        @apply @tailwind base;*/
+/*    }*/
+/*}*/
+._cursorPointer_1fc8a_1 {
+    cursor: pointer
+}
+._con_1fc8a_3 {
+    display: flex;
+    height: 536px;
+    width: 358px;
+    flex-direction: column;
+    --tw-bg-opacity: 1;
+    background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+    border-radius: 8px;
+    border-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: rgb(224 224 224 / var(--tw-border-opacity));
+    --tw-shadow: 0px 4px 16px 0px rgba(0,0,0,0.16);
+    --tw-shadow-colored: 0px 4px 16px 0px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+._headerCon_1fc8a_9 {
+    position: relative;
+    display: flex;
+    height: 50px;
+    width: 356px;
+    align-items: center;
+    justify-content: center;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    font-size: 14px;
+    --tw-text-opacity: 1;
+    color: rgb(128 128 128 / var(--tw-text-opacity));
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: rgb(224 224 224 / var(--tw-border-opacity))
+}
+._close_1fc8a_15 {
+    position: absolute;
+    top: 12px;
+    left: 317px;
+    cursor: pointer
+}
+._chatBoxCon_1fc8a_20 {
+    flex: 1 1 0%;
+    overflow: hidden
+}
+._imageCon_1fc8a_24 {
+    display: flex;
+    height: 36px;
+    width: 356px;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    --tw-text-opacity: 1;
+    color: rgb(128 128 128 / var(--tw-text-opacity))
+}
+._image_1fc8a_24 {
+    margin-left: 6px;
+    height: 18px;
+    width: 64px
+}
+/*corePlugins: {*/
+/*    preflight: false,*/
+/*},*/
+/* We will not import the css of @tailwind base */
+/* https://tailwindcss.com/docs/preflight */
+*, ::before, ::after {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x:  ;
+    --tw-pan-y:  ;
+    --tw-pinch-zoom:  ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
+    --tw-ordinal:  ;
+    --tw-slashed-zero:  ;
+    --tw-numeric-figure:  ;
+    --tw-numeric-spacing:  ;
+    --tw-numeric-fraction:  ;
+    --tw-ring-inset:  ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur:  ;
+    --tw-brightness:  ;
+    --tw-contrast:  ;
+    --tw-grayscale:  ;
+    --tw-hue-rotate:  ;
+    --tw-invert:  ;
+    --tw-saturate:  ;
+    --tw-sepia:  ;
+    --tw-drop-shadow:  ;
+    --tw-backdrop-blur:  ;
+    --tw-backdrop-brightness:  ;
+    --tw-backdrop-contrast:  ;
+    --tw-backdrop-grayscale:  ;
+    --tw-backdrop-hue-rotate:  ;
+    --tw-backdrop-invert:  ;
+    --tw-backdrop-opacity:  ;
+    --tw-backdrop-saturate:  ;
+    --tw-backdrop-sepia:  ;
+    --tw-contain-size:  ;
+    --tw-contain-layout:  ;
+    --tw-contain-paint:  ;
+    --tw-contain-style:  ;
+}
+::backdrop {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x:  ;
+    --tw-pan-y:  ;
+    --tw-pinch-zoom:  ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
+    --tw-ordinal:  ;
+    --tw-slashed-zero:  ;
+    --tw-numeric-figure:  ;
+    --tw-numeric-spacing:  ;
+    --tw-numeric-fraction:  ;
+    --tw-ring-inset:  ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur:  ;
+    --tw-brightness:  ;
+    --tw-contrast:  ;
+    --tw-grayscale:  ;
+    --tw-hue-rotate:  ;
+    --tw-invert:  ;
+    --tw-saturate:  ;
+    --tw-sepia:  ;
+    --tw-drop-shadow:  ;
+    --tw-backdrop-blur:  ;
+    --tw-backdrop-brightness:  ;
+    --tw-backdrop-contrast:  ;
+    --tw-backdrop-grayscale:  ;
+    --tw-backdrop-hue-rotate:  ;
+    --tw-backdrop-invert:  ;
+    --tw-backdrop-opacity:  ;
+    --tw-backdrop-saturate:  ;
+    --tw-backdrop-sepia:  ;
+    --tw-contain-size:  ;
+    --tw-contain-layout:  ;
+    --tw-contain-paint:  ;
+    --tw-contain-style:  ;
+}
+._container_1w0as_1 {
+    width: 100%;
+}
+@media (min-width: 640px) {
+    ._container_1w0as_1 {
+        max-width: 640px;
+    }
+}
+@media (min-width: 768px) {
+    ._container_1w0as_1 {
+        max-width: 768px;
+    }
+}
+@media (min-width: 1024px) {
+    ._container_1w0as_1 {
+        max-width: 1024px;
+    }
+}
+@media (min-width: 1280px) {
+    ._container_1w0as_1 {
+        max-width: 1280px;
+    }
+}
+@media (min-width: 1536px) {
+    ._container_1w0as_1 {
+        max-width: 1536px;
+    }
+}
+/*#tailContainer {*/
+/*    @apply @tailwind base;*/
+/*}*/
+/*@layer base {*/
+/*    #tailContainer {*/
+/*        @apply @tailwind base;*/
+/*    }*/
+/*}*/
+._cursorPointer_1w0as_1 {
+    cursor: pointer;
+}
+._chatCon_1w0as_3 {
+    position: relative;
+    width: 64px;
+    height: 64px;
+}
+._tipConPosition_1w0as_9 {
+    position: absolute;
+    top: -90px;
+    transition: top 0.6s 0.6s;
+}
+._tipConPositionHidden_1w0as_14 {
+    top: 100px;
+}
+._tipCon_1w0as_9 {
+    opacity: 0;
+    transition: opacity 0.6s;
+}
+._tipConShow_1w0as_23 {
+    opacity: 1;
+}
+._chatBlock_1w0as_27 {
+    display: block;
+}
+._chatHidden_1w0as_31 {
+    display: none;
+}
+._logo_1w0as_35{
+    height: 64px;
+    width: 64px;
+    border-radius: 64px;
+    box-shadow: 0 4px 16px 0 #00000029;
+}
+._logoCon_1w0as_42 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: top 0.3s linear;
+}
+._logoConHidden_1w0as_49 {
+    top: 100px;
+}
+._chatBoxCon_1w0as_53 {
+    position: absolute;
+    top: -472px;
+    left: -291px;
+    transition: top 0.3s linear;
+}
+._chatBoxConHidden_1w0as_59 {
+    top: 90px;
+}
+
+._tailwindContainer_1h4qv_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  text-align: left;
+  /*
+  1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+  2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+  */
+  /*
+  1. Use a consistent sensible line-height in all browsers.
+  2. Prevent adjustments of font size after orientation changes in iOS.
+  3. Use a more readable tab size.
+  4. Use the user's configured `sans` font-family by default.
+  5. Use the user's configured `sans` font-feature-settings by default.
+  6. Use the user's configured `sans` font-variation-settings by default.
+  7. Disable tap highlights on iOS
+  */
+  /*
+  1. Remove the margin in all browsers.
+  2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+  */
+  /*
+  1. Add the correct height in Firefox.
+  2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+  3. Ensure horizontal rules are visible by default.
+  */
+  /*
+  Add the correct text decoration in Chrome, Edge, and Safari.
+  */
+  /*
+  Remove the default font size and weight for headings.
+  */
+  /*
+  Reset links to optimize for opt-in styling instead of opt-out.
+  */
+  /*
+  Add the correct font weight in Edge and Safari.
+  */
+  /*
+  1. Use the user's configured `mono` font-family by default.
+  2. Use the user's configured `mono` font-feature-settings by default.
+  3. Use the user's configured `mono` font-variation-settings by default.
+  4. Correct the odd `em` font sizing in all browsers.
+  */
+  /*
+  Add the correct font size in all browsers.
+  */
+  /*
+  Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+  */
+  /*
+  1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+  2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+  3. Remove gaps between table borders by default.
+  */
+  /*
+  1. Change the font styles in all browsers.
+  2. Remove the margin in Firefox and Safari.
+  3. Remove default padding in all browsers.
+  */
+  /*
+  Remove the inheritance of text transform in Edge and Firefox.
+  */
+  /*
+  1. Correct the inability to style clickable types in iOS and Safari.
+  2. Remove default button styles.
+  */
+  /*
+  Use the modern Firefox focus style for all focusable elements.
+  */
+  /*
+  Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+  */
+  /*
+  Add the correct vertical alignment in Chrome and Firefox.
+  */
+  /*
+  Correct the cursor style of increment and decrement buttons in Safari.
+  */
+  /*
+  1. Correct the odd appearance in Chrome and Safari.
+  2. Correct the outline style in Safari.
+  */
+  /*
+  Remove the inner padding in Chrome and Safari on macOS.
+  */
+  /*
+  1. Correct the inability to style clickable types in iOS and Safari.
+  2. Change font properties to `inherit` in Safari.
+  */
+  /*
+  Add the correct display in Chrome and Safari.
+  */
+  /*
+  Removes the default spacing and border for appropriate elements.
+  */
+  /*
+  Reset default styling for dialogs.
+  */
+  /*
+  Prevent resizing textareas horizontally by default.
+  */
+  /*
+  1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+  2. Set the default placeholder color to the user's configured gray 400 color.
+  */
+  /*
+  Set the default cursor for buttons.
+  */
+  /*
+  Make sure disabled buttons don't get the pointer cursor.
+  */
+  /*
+  1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+  2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+     This can trigger a poorly considered lint error in some tools but is included by design.
+  */
+  /*
+  Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+  */
+  /* Make elements with the HTML hidden attribute stay hidden by default */
+}
+._tailwindContainer_1h4qv_1 *,
+._tailwindContainer_1h4qv_1 ::before,
+._tailwindContainer_1h4qv_1 ::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: #e5e7eb; /* 2 */
+}
+._tailwindContainer_1h4qv_1 ::before,
+._tailwindContainer_1h4qv_1 ::after {
+  --tw-content: "";
+}
+._tailwindContainer_1h4qv_1 html,
+._tailwindContainer_1h4qv_1 :host {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4; /* 3 */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+  font-feature-settings: normal; /* 5 */
+  font-variation-settings: normal; /* 6 */
+  -webkit-tap-highlight-color: transparent; /* 7 */
+}
+._tailwindContainer_1h4qv_1 body {
+  margin: 0; /* 1 */
+  line-height: inherit; /* 2 */
+}
+._tailwindContainer_1h4qv_1 hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+  border-top-width: 1px; /* 3 */
+}
+._tailwindContainer_1h4qv_1 abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+._tailwindContainer_1h4qv_1 h1,
+._tailwindContainer_1h4qv_1 h2,
+._tailwindContainer_1h4qv_1 h3,
+._tailwindContainer_1h4qv_1 h4,
+._tailwindContainer_1h4qv_1 h5,
+._tailwindContainer_1h4qv_1 h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+._tailwindContainer_1h4qv_1 a {
+  color: inherit;
+  text-decoration: inherit;
+}
+._tailwindContainer_1h4qv_1 b,
+._tailwindContainer_1h4qv_1 strong {
+  font-weight: bolder;
+}
+._tailwindContainer_1h4qv_1 code,
+._tailwindContainer_1h4qv_1 kbd,
+._tailwindContainer_1h4qv_1 samp,
+._tailwindContainer_1h4qv_1 pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
+  font-feature-settings: normal; /* 2 */
+  font-variation-settings: normal; /* 3 */
+  font-size: 1em; /* 4 */
+}
+._tailwindContainer_1h4qv_1 small {
+  font-size: 80%;
+}
+._tailwindContainer_1h4qv_1 sub,
+._tailwindContainer_1h4qv_1 sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+._tailwindContainer_1h4qv_1 sub {
+  bottom: -0.25em;
+}
+._tailwindContainer_1h4qv_1 sup {
+  top: -0.5em;
+}
+._tailwindContainer_1h4qv_1 table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+  border-collapse: collapse; /* 3 */
+}
+._tailwindContainer_1h4qv_1 button,
+._tailwindContainer_1h4qv_1 input,
+._tailwindContainer_1h4qv_1 optgroup,
+._tailwindContainer_1h4qv_1 select,
+._tailwindContainer_1h4qv_1 textarea {
+  font-family: inherit; /* 1 */
+  font-feature-settings: inherit; /* 1 */
+  font-variation-settings: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  font-weight: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  letter-spacing: inherit; /* 1 */
+  color: inherit; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 3 */
+}
+._tailwindContainer_1h4qv_1 button,
+._tailwindContainer_1h4qv_1 select {
+  text-transform: none;
+}
+._tailwindContainer_1h4qv_1 button,
+._tailwindContainer_1h4qv_1 input:where([type=button]),
+._tailwindContainer_1h4qv_1 input:where([type=reset]),
+._tailwindContainer_1h4qv_1 input:where([type=submit]) {
+  -webkit-appearance: button; /* 1 */
+  background-color: transparent; /* 2 */
+  background-image: none; /* 2 */
+}
+._tailwindContainer_1h4qv_1 :-moz-focusring {
+  outline: auto;
+}
+._tailwindContainer_1h4qv_1 :-moz-ui-invalid {
+  box-shadow: none;
+}
+._tailwindContainer_1h4qv_1 progress {
+  vertical-align: baseline;
+}
+._tailwindContainer_1h4qv_1 ::-webkit-inner-spin-button,
+._tailwindContainer_1h4qv_1 ::-webkit-outer-spin-button {
+  height: auto;
+}
+._tailwindContainer_1h4qv_1 [type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+._tailwindContainer_1h4qv_1 ::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+._tailwindContainer_1h4qv_1 ::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+._tailwindContainer_1h4qv_1 summary {
+  display: list-item;
+}
+._tailwindContainer_1h4qv_1 blockquote,
+._tailwindContainer_1h4qv_1 dl,
+._tailwindContainer_1h4qv_1 dd,
+._tailwindContainer_1h4qv_1 h1,
+._tailwindContainer_1h4qv_1 h2,
+._tailwindContainer_1h4qv_1 h3,
+._tailwindContainer_1h4qv_1 h4,
+._tailwindContainer_1h4qv_1 h5,
+._tailwindContainer_1h4qv_1 h6,
+._tailwindContainer_1h4qv_1 hr,
+._tailwindContainer_1h4qv_1 figure,
+._tailwindContainer_1h4qv_1 p,
+._tailwindContainer_1h4qv_1 pre {
+  margin: 0;
+}
+._tailwindContainer_1h4qv_1 fieldset {
+  margin: 0;
+  padding: 0;
+}
+._tailwindContainer_1h4qv_1 legend {
+  padding: 0;
+}
+._tailwindContainer_1h4qv_1 ol,
+._tailwindContainer_1h4qv_1 ul,
+._tailwindContainer_1h4qv_1 menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+._tailwindContainer_1h4qv_1 dialog {
+  padding: 0;
+}
+._tailwindContainer_1h4qv_1 textarea {
+  resize: vertical;
+}
+._tailwindContainer_1h4qv_1 input::-moz-placeholder, ._tailwindContainer_1h4qv_1 textarea::-moz-placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+._tailwindContainer_1h4qv_1 input::placeholder,
+._tailwindContainer_1h4qv_1 textarea::placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+._tailwindContainer_1h4qv_1 button,
+._tailwindContainer_1h4qv_1 [role=button] {
+  cursor: pointer;
+}
+._tailwindContainer_1h4qv_1 :disabled {
+  cursor: default;
+}
+._tailwindContainer_1h4qv_1 img,
+._tailwindContainer_1h4qv_1 svg,
+._tailwindContainer_1h4qv_1 video,
+._tailwindContainer_1h4qv_1 canvas,
+._tailwindContainer_1h4qv_1 audio,
+._tailwindContainer_1h4qv_1 iframe,
+._tailwindContainer_1h4qv_1 embed,
+._tailwindContainer_1h4qv_1 object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+._tailwindContainer_1h4qv_1 img,
+._tailwindContainer_1h4qv_1 video {
+  max-width: 100%;
+  height: auto;
+}
+._tailwindContainer_1h4qv_1 [hidden] {
+  display: none;
+}
