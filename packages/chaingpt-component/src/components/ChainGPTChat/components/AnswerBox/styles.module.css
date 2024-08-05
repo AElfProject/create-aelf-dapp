@@ -11,6 +11,9 @@
 .childrenContainer {
     @apply flex-1 ml-[8px] text-[13px];
 }
+.childrenContainer a {
+    @apply text-blue-600;
+}
 
 .logoImage {
     @apply w-[32px] h-[32px];

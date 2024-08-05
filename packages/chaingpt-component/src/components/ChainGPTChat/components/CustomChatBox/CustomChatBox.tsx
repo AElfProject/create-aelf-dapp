@@ -1,5 +1,5 @@
 import ChainGPTClose from '../../assets/close.svg';
-import ChatBox from '../ChatBox/ChatBox.tsx';
+import ChatBox, {IOptions} from '../ChatBox/ChatBox.tsx';
 import {Welcome} from '../Welcome/Welcome.tsx';
 import ChainGPTIconSmall from '../../assets/icon-small.svg';
 import styles from './styles.module.css';
@@ -7,11 +7,13 @@ import styles from './styles.module.css';
 export function CustomChatBox({
   onClose,
                                 apiUri,
-  historyLimit = 200
+  historyLimit = 200,
+                                options
                               }: {
   onClose: () => void;
   apiUri: string;
   historyLimit?: number;
+  options?: IOptions;
 }) {
   return <div className={styles.con}>
     <div className={styles.headerCon}>
@@ -27,6 +29,7 @@ export function CustomChatBox({
         Welcome={Welcome}
         apiUri={apiUri}
         historyLimit={historyLimit}
+        options={options}
       />
     </div>
     <div className={styles.imageCon}>

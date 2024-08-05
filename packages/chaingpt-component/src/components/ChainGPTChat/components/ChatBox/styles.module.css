@@ -33,3 +33,7 @@
 .answerHidden {
     @apply hidden;
 }
+
+.textLink {
+    @apply text-blue-600;
+}

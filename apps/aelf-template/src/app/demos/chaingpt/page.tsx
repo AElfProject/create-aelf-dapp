@@ -29,6 +29,9 @@ export default function Page() {
     <div className="fixed right-[18px] bottom-[18px] flex flex-col items-end">
       <ChatBoxButton
         apiUri={chatAPI}
+        options={{
+          questionSuffix: '.Respond in a single paragraph.'
+        }}
       />
     </div>
     <Button onClick={() => {

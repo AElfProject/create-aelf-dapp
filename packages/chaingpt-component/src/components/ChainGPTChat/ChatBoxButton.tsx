@@ -1,9 +1,10 @@
 import {useEffect, useState} from 'react';
+import preflightStyles from '../../styles/tailwindPreflight.module.scss';
 import {ChainGPTLogo} from './components/ChainGPTLogo/ChainGPTLogo.tsx';
 import {TipBox} from './components/TipBox/TipBox.tsx';
 import {CustomChatBox} from './components/CustomChatBox/CustomChatBox.tsx';
 import styles from './style.module.css';
-import preflightStyles from '../../styles/tailwindPreflight.module.scss';
+import {IOptions} from './components/ChatBox/ChatBox.tsx';
 
 export default {
   TipBox, ChainGPTLogo, CustomChatBox, ChatBoxButton
@@ -11,10 +12,12 @@ export default {
 
 export function ChatBoxButton({
                                 apiUri,
-                                historyLimit = 200
+                                historyLimit = 200,
+  options
 }: {
   apiUri: string,
-  historyLimit?: number
+  historyLimit?: number,
+  options?: IOptions
 }) {
   const [hiddenTip, setHiddenTip] = useState(true);
   const [hiddenChat, setHiddenChat] = useState(true);
@@ -52,6 +55,7 @@ export function ChatBoxButton({
         }}
         apiUri={apiUri}
         historyLimit={historyLimit}
+        options={options}
       />
     </div>
   </div>
