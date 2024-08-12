@@ -43,3 +43,6 @@ next-env.d.ts
 
 # npm pack local test
 package
+
+# git ls-files > filelist.txt
+filelist.txt
