@@ -39,7 +39,7 @@ export default function SocketPage() {
       console.log('Question: ');
       client.socket('/socket-io/', {
         type: 'emit',
-        event: 'question-chain-gpt',
+        event: 'question-chat-gpt',
         value: 'question socket case',
         callback: (response: any) => {
           console.log(response.status);

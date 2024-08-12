@@ -1,6 +1,6 @@
 {
   "name": "create-aelf-dapp",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Create aelf Dapp based on Next.js with one command",
   "files": [
     "cli.js",
