@@ -22,9 +22,11 @@ const getData = (url: string) => new Promise((resolve, reject) => {
   req.send();
 });
 // const URL_TEST = 'https://httpbin.org/get?trace=233333';
-const URL_TEST = 'http://localhost:8093/sharp/api/app/book';
+const URL_TEST = '/v1/api/app/book';
 export default function Page() {
+  // Solution1: use useContext
   // const webTracerWithZone = useContext(OpentelemetryContext);
+  // Solution2: use useOpentelemetry
   const webTracerWithZone = useOpentelemetry();
 
   return <>

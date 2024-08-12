@@ -10,7 +10,8 @@ export default function Fetch() {
     <div>
       <Button
         onClick={async () => {
-          await fetchEventSource('http://localhost:3100/api/chaingpt', {
+          // await fetchEventSource('http://localhost:3100/api/chaingpt', {
+          await fetchEventSource('/api/chaingpt', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',

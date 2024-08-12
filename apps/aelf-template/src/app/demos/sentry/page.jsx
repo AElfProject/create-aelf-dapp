@@ -24,7 +24,7 @@ const getData = (url) => new Promise((resolve, reject) => {
   req.send();
 });
 // const URL_TEST = 'https://httpbin.org/get';
-const URL_TEST = 'http://localhost:8093/sharp/api/app/book';
+const URL_TEST = '/v1/api/app/book';
 
 export default function Page() {
   return (

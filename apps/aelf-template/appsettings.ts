@@ -3,7 +3,7 @@ export const APP_SETTINGS: IAppSettings = {
     "serviceName": "create-aelf-dapp",
     "serviceVersion": "v1.0",
     // https://opentelemetry.io/docs/languages/sdk-configuration/otlp-exporter/
-    "collectorEndpoint": "http://localhost:8093/v1/traces",
+    "collectorEndpoint": "/v1/traces",
     "tracerName": "create-aelf-dapp-tracer",
     ignoreUrls: [
       /localhost:8093\/sockjs-node/,

@@ -32,6 +32,7 @@ dist-ssr
 
 # lock
 *-lock.yarl
+*-lock.yaml
 *-lock.json
 
 apps/aelf-template/.next
