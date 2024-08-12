@@ -33,7 +33,7 @@ export default function SocketPage() {
     }}>Connect</Button>
     <Button onClick={() => {
       console.log('Question: ');
-      socket.emit('question-chain-gpt', 'question socket case', (response: any) => {
+      socket.emit('question-chat-gpt', 'question socket case', (response: any) => {
         console.log(response.status);
         console.log(response.text);
         setAnswer(response.text);

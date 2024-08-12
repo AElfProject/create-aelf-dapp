@@ -7,7 +7,7 @@ import {ISocketRequestOptions} from '@/app/demos/api-all-in-one/socket-io';
 export interface IBaseRequestOptions {
   method?: string;
   headers?: Record<string, string>;
-  body?: Record<string, any>;
+  body?: any; // Record<string, any>;
 }
 
 export interface IRequestOptions extends ISocketRequestOptions, IApolloRequestOptions {}
@@ -20,7 +20,7 @@ export class RequestAllInOne {
   private readonly headers: Record<string, string>;
   private readonly apolloConfig: any;
   private readonly apolloClient: ApolloClient<any> | undefined; // TCacheShape
-  private readonly socketClient: Socket | undefined;
+  public socketClient: Socket | undefined;
   private options: Partial<IRequestOptions>;
   constructor(options: Partial<IRequestOptions>) {
     this.options = options || {};

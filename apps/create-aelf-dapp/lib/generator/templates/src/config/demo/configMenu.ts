@@ -53,16 +53,24 @@ export const menuList: IMenuItemData[] = [
     label: 'ChainGPT',
     href: '/demos/chaingpt',
   },
-  {
-    label: 'socket',
-    href: '/demos/socket',
-  },
-  {
-    label: 'Graphql',
-    href: '/demos/graphql/server',
-  },
+  // {
+  //   label: 'socket',
+  //   href: '/demos/socket',
+  // },
+  // {
+  //   label: 'Graphql',
+  //   href: '/demos/graphql/server',
+  // },
   {
     label: 'API All in one',
     href: '/demos/api-all-in-one',
   },
+  {
+    label: 'opentelemetry',
+    href: '/demos/opentelemetry',
+  },
+  // {
+  //   label: 'opentelemetry-request',
+  //   href: '/demos/opentelemetry-request',
+  // },
 ];
