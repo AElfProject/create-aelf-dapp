@@ -19,7 +19,7 @@ server {
     # template
     location / {
         proxy_pass http://localhost:3005;
-        proxy_ssl_verify off;  # 如果使用自签名证书，禁用证书验证
+        proxy_ssl_verify off;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
@@ -29,7 +29,7 @@ server {
     # https://github.com/AElfProject/backend-templates
     location /v1/token {
         proxy_pass https://localhost:44376/token;
-        proxy_ssl_verify off;  # 如果使用自签名证书，禁用证书验证
+        proxy_ssl_verify off;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
@@ -42,7 +42,7 @@ server {
         proxy_set_header X-real-ip $remote_addr;
         proxy_set_header X-forward-for $proxy_add_x_forwarded_for;
         proxy_set_header X-Forwarded-Proto $scheme;
-        proxy_ssl_verify off;  # 如果使用自签名证书，禁用证书验证
+        proxy_ssl_verify off;
         proxy_pass https://localhost:44376/api;
     }
     
