@@ -8,7 +8,7 @@ export class ExampleService {
 
   @aggregateExecutionTime
   async asyncMethod() {
-    await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate async workload
+    await new Promise((resolve) => setTimeout(resolve, 1000)); // Simulate async workload
     return 'Async result';
   }
 }

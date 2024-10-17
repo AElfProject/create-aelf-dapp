@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import { useState } from "react";
+import { useState } from 'react';
 
 import {
   decrement,
@@ -10,16 +10,16 @@ import {
   incrementIfOdd,
   selectCount,
   selectStatus,
-} from "@/app/lib/reduxToolkit/features/counter/counterSlice";
+} from '@/app/lib/reduxToolkit/features/counter/counterSlice';
 
-import { useAppDispatch, useAppSelector } from "@/app/lib/reduxToolkit/hooks";
-import styles from "./Counter.module.css";
+import { useAppDispatch, useAppSelector } from '@/app/lib/reduxToolkit/hooks';
+import styles from './Counter.module.css';
 
 export const Counter = () => {
   const dispatch = useAppDispatch();
   const count = useAppSelector(selectCount);
   const status = useAppSelector(selectStatus);
-  const [incrementAmount, setIncrementAmount] = useState("2");
+  const [incrementAmount, setIncrementAmount] = useState('2');
 
   const incrementValue = Number(incrementAmount) || 0;
 
@@ -62,7 +62,7 @@ export const Counter = () => {
         </button>
         <button
           className={styles.asyncButton}
-          disabled={status !== "idle"}
+          disabled={status !== 'idle'}
           onClick={() => dispatch(incrementAsync(incrementValue))}
         >
           Add Async

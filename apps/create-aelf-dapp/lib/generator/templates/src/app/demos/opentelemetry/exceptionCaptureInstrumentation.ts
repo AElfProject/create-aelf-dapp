@@ -1,4 +1,7 @@
-import { InstrumentationBase, InstrumentationConfig } from '@opentelemetry/instrumentation';
+import {
+  InstrumentationBase,
+  InstrumentationConfig,
+} from '@opentelemetry/instrumentation';
 import { Span, trace } from '@opentelemetry/api';
 
 interface ExceptionCaptureConfig extends InstrumentationConfig {

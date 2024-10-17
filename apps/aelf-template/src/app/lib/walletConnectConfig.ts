@@ -2,23 +2,31 @@ import { PortkeyDiscoverWallet } from '@aelf-web-login/wallet-adapter-portkey-di
 import { PortkeyAAWallet } from '@aelf-web-login/wallet-adapter-portkey-aa';
 import { NightElfWallet } from '@aelf-web-login/wallet-adapter-night-elf';
 import { IConfigProps } from '@aelf-web-login/wallet-adapter-bridge';
-import { TChainId, SignInDesignEnum, NetworkEnum } from '@aelf-web-login/wallet-adapter-base';
+import {
+  TChainId,
+  SignInDesignEnum,
+  NetworkEnum,
+} from '@aelf-web-login/wallet-adapter-base';
 
 const APP_NAME = 'explorer.aelf.io';
 const WEBSITE_ICON = 'https://explorer.aelf.io/favicon.main.ico';
 const CHAIN_ID = 'AELF' as TChainId;
 const NETWORK_TYPE = NetworkEnum.TESTNET;
-const RPC_SERVER_AELF = 'https://explorer-test.aelf.io/chain';
-const RPC_SERVER_TDVV = 'https://explorer-test-side02.aelf.io/chain';
-const RPC_SERVER_TDVW = 'https://explorer-test-side02.aelf.io/chain';
-const GRAPHQL_SERVER = 'https://dapp-aa-portkey-test.portkey.finance/Portkey_DID/PortKeyIndexerCASchema/graphql';
+const RPC_SERVER_AELF = 'https://aelf-test-node.aelf.io';
+const RPC_SERVER_TDVV = 'https://tdvv-public-node.aelf.io';
+const RPC_SERVER_TDVW = 'https://tdvw-test-node.aelf.io';
+const GRAPHQL_SERVER =
+  'https://dapp-aa-portkey-test.portkey.finance/Portkey_DID/PortKeyIndexerCASchema/graphql';
 const CONNECT_SERVER = 'https://auth-aa-portkey-test.portkey.finance';
+const SERVICE_SERVER = 'https://aa-portkey-test.portkey.finance';
+const TELEGRAM_BOT_ID = 'xx';
 
 const didConfig = {
   graphQLUrl: GRAPHQL_SERVER,
   connectUrl: CONNECT_SERVER,
+  serviceUrl: SERVICE_SERVER,
   requestDefaults: {
-    baseURL: 'https://aa-portkey-test.portkey.finance',
+    baseURL: SERVICE_SERVER,
     timeout: 30000,
   },
   socialLogin: {
@@ -26,12 +34,30 @@ const didConfig = {
       websiteName: APP_NAME,
       websiteIcon: WEBSITE_ICON,
     },
+    Telegram: {
+      botId: TELEGRAM_BOT_ID,
+    },
   },
+  // customNetworkType: NETWORK_TYPE === 'TESTNET' ? 'offline' : 'online',
+  // loginConfig: {
+  //   loginMethodsOrder: [ "Email",  "Google" , "Apple" ,  "Scan"]
+  // }
 };
 
 const baseConfig = {
+  // ConfirmLogoutDialog: CustomizedConfirmLogoutDialog,
+  // SignInComponent: SignInProxy,
+  // defaultPin: '111111',
+  // PortkeyProviderProps: {
+  //   theme: 'light' as any,
+  // },
+  // omitTelegramScript: false,
+  // cancelAutoLoginInTelegram: false,
+  enableAcceleration: true,
   networkType: NETWORK_TYPE,
   chainId: CHAIN_ID,
+  showVconsole: false,
+  // chainId: CHAIN_ID,
   keyboard: true,
   noCommonBaseModal: false,
   design: SignInDesignEnum.CryptoDesign, // "SocialDesign" | "CryptoDesign" | "Web2Design"
@@ -44,11 +70,12 @@ const wallets = [
     appName: APP_NAME,
     chainId: CHAIN_ID,
     autoShowUnlock: true,
+    noNeedForConfirm: false,
   }),
   new PortkeyDiscoverWallet({
     networkType: NETWORK_TYPE,
     chainId: CHAIN_ID,
-    autoRequestAccount: true,
+    autoRequestAccount: true, // If set to true, please contact Portkey to add whitelist @Rachel
     autoLogoutOnDisconnected: true,
     autoLogoutOnNetworkMismatch: true,
     autoLogoutOnAccountMismatch: true,
@@ -79,5 +106,11 @@ const wallets = [
 export const walletConnectConfig: IConfigProps = {
   didConfig,
   baseConfig,
-  wallets
+  wallets,
 };
+
+// const config: IConfigProps = {
+//   didConfig,
+//   baseConfig,
+//   wallets,
+// };

@@ -1,5 +1,7 @@
-import createApolloClient, {queryCountries} from '@/app/demos/graphql/apollo-client';
-export async function getData() {
+import createApolloClient, {
+  queryCountries,
+} from '@/app/demos/graphql/apollo-client';
+async function getData() {
   const client = createApolloClient();
   const { data } = await client.query({
     query: queryCountries,
@@ -10,14 +12,16 @@ export async function getData() {
 
 export default async function Graphql() {
   const countries = await getData();
-  return <div>
-    {countries.map((country: any) => (
-      <div key={country.code}>
-        <h3>{country.name}</h3>
-        <p>
-          {country.code} - {country.emoji}
-        </p>
-      </div>
-    ))}
-  </div>
+  return (
+    <div>
+      {countries.map((country: any) => (
+        <div key={country.code}>
+          <h3>{country.name}</h3>
+          <p>
+            {country.code} - {country.emoji}
+          </p>
+        </div>
+      ))}
+    </div>
+  );
 }

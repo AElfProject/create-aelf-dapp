@@ -1,13 +1,13 @@
-"use client"
-import {createContext, ReactNode, useEffect, useState} from 'react';
-import {RequestAllInOne} from 'request-all-in-one';
+'use client';
+import { createContext, ReactNode, useEffect, useState } from 'react';
+import { RequestAllInOne } from 'request-all-in-one';
 interface Props {
   readonly children: ReactNode;
 }
 export const CSRFTokenContext = createContext<string>('');
 
 export const CSRFTokenProvider = ({ children }: Props) => {
-  const [token, setToken] = useState<string>();
+  const [token, setToken] = useState<string>('');
   useEffect(() => {
     const token = localStorage.getItem('csrfToken');
     if (token) {
@@ -22,13 +22,19 @@ export const CSRFTokenProvider = ({ children }: Props) => {
         return response.data;
       }
       throw Error('fetch token error');
-    }
-    fetchToken().then(token => {
-      console.log('fetch token done', token);
-    }).catch(error => {
-      console.log('fetch token error: ', error);
-    });
+    };
+    fetchToken()
+      .then((token) => {
+        console.log('fetch token done', token);
+      })
+      .catch((error) => {
+        console.log('fetch token error: ', error);
+      });
   }, []);
 
-  return <CSRFTokenContext.Provider value={token}>{children}</CSRFTokenContext.Provider>;
+  return (
+    <CSRFTokenContext.Provider value={token}>
+      {children}
+    </CSRFTokenContext.Provider>
+  );
 };

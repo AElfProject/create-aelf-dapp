@@ -1,5 +1,7 @@
 export default async function Graphql() {
-  return <>
-    <div>Nothing here</div>
-  </>
+  return (
+    <>
+      <div>Nothing here</div>
+    </>
+  );
 }

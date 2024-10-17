@@ -11,10 +11,12 @@ const items: MenuItem[] = [
 export default function GraphqlLayout({
   children, // will be a page or nested layout
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
-  return <>
-    <Menu mode="horizontal" items={items} />
-    <div>{children}</div>
-  </>;
+  return (
+    <>
+      <Menu mode="horizontal" items={items} />
+      <div>{children}</div>
+    </>
+  );
 }

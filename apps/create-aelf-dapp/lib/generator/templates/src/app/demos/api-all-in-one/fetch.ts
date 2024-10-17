@@ -1,7 +1,9 @@
 import { IBaseRequestOptions } from '@/app/demos/api-all-in-one/fetch-data';
 
-export const fetchData = async (url: string, options: IBaseRequestOptions = {}) => {
-
+export const fetchData = async (
+  url: string,
+  options: IBaseRequestOptions = {},
+) => {
   const { method = 'GET', headers = {}, body } = options;
 
   const fetchOptions: any = {
@@ -20,4 +22,4 @@ export const fetchData = async (url: string, options: IBaseRequestOptions = {}) 
   }
 
   return response.json();
-}
+};

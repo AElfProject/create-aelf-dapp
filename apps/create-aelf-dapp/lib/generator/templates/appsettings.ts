@@ -12,7 +12,10 @@ export const APP_SETTINGS: IAppSettings = {
     ],
     propagateTraceHeaderCorsUrls: [
       // /.*/,
-      "https://httpbin.org"
+      /gcptest-indexer-api\.aefinder\.io/,
+      // "https://httpbin.org",
+      // "https://otel.aelf.com/v1/traces",
+      // "gcptest-indexer-api.aefinder.io/*"
     ],
   },
   "chainGPT": {
