@@ -46,3 +46,5 @@ package
 
 # git ls-files > filelist.txt
 filelist.txt
+
+.eslintcache

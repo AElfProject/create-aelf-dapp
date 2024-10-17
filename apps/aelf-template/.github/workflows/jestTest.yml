@@ -1,20 +1,13 @@
 name: Test by jest
 
-on: [push, pull_request]
+on: [pull_request]
 
 jobs:
   lint:
-    runs-on: ubuntu-latest
+    uses: ./.github/workflows/setup-node.yml
+    with:
+      cache-name: cache-node-modules
 
     steps:
-      - uses: actions/checkout@v4
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'  # Your node version, default 20 in 2024
-
-      - name: Install Dependencies
-        run: yarn
-
-      - name: Run Test
-        run: yarn test
+      - name: Run Jest Test
+        run: pnpm test

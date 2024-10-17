@@ -30,22 +30,22 @@
 // "externalInfo":NULL
 // "owner":NULL
 export interface IToken {
-  symbol: string
-  tokenName: string
-  supply: string
-  totalSupply: string
-  decimals: number
-  issuer: string
-  isBurnable: boolean
-  issueChainId: number
-  issued: number
-  externalInfo?: ITokenInfoExternalInfo
-  owner?: string
+  symbol: string;
+  tokenName: string;
+  supply: string;
+  totalSupply: string;
+  decimals: number;
+  issuer: string;
+  isBurnable: boolean;
+  issueChainId: number;
+  issued: number;
+  externalInfo?: ITokenInfoExternalInfo;
+  owner?: string;
 }
 export interface ITokenInfoExternalInfo {
   value: {
-    __inscription_image: string
-    __nft_image_uri: string
-    __inscription_deploy: string
-  }
+    __inscription_image: string;
+    __nft_image_uri: string;
+    __inscription_deploy: string;
+  };
 }

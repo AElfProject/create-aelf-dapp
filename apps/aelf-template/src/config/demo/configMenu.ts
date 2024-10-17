@@ -3,7 +3,7 @@ import { IMenuItemData } from '@/components/demo/Menu';
 export const menuList: IMenuItemData[] = [
   {
     label: 'demo home',
-    href: '/demos'
+    href: '/demos',
   },
   {
     label: 'with search params',
@@ -49,10 +49,6 @@ export const menuList: IMenuItemData[] = [
     label: 'jest',
     href: '/demos/jest',
   },
-  {
-    label: 'ChainGPT',
-    href: '/demos/chaingpt',
-  },
   // {
   //   label: 'socket',
   //   href: '/demos/socket',
@@ -68,6 +64,10 @@ export const menuList: IMenuItemData[] = [
   {
     label: 'opentelemetry',
     href: '/demos/opentelemetry',
+  },
+  {
+    label: 'reCAPTCHA',
+    href: '/demos/recaptcha',
   },
   // {
   //   label: 'opentelemetry-request',

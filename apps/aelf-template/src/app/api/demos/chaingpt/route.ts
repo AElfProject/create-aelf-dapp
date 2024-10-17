@@ -1,10 +1,10 @@
-import type {NextRequest} from "next/server";
-import {NextResponse} from "next/server";
-import {Errors, GeneralChat} from '@chaingpt/generalchat';
-import { setTimeout } from 'node:timers/promises'
-import {APP_SETTINGS} from '../../../../../appsettings';
+import type { NextRequest } from 'next/server';
+import { NextResponse } from 'next/server';
+import { Errors, GeneralChat } from '@chaingpt/generalchat';
+import { setTimeout } from 'node:timers/promises';
+import { APP_SETTINGS } from '../../../../../appsettings';
 
-console.log('CHAINGPT_API_KEY: ',  APP_SETTINGS.chainGPT.apiKey);
+console.log('CHAINGPT_API_KEY: ', APP_SETTINGS.chainGPT.apiKey);
 const generalchat = new GeneralChat({
   apiKey: APP_SETTINGS.chainGPT.apiKey as string,
 });
@@ -19,7 +19,7 @@ async function chainGPTChat(question: string) {
       console.log('generalchat', question, APP_SETTINGS.chainGPT.apiKey);
       const stream = await generalchat.createChatStream({
         question: question, // 'Explain quantum computing in simple terms',
-        chatHistory: "off"
+        chatHistory: 'off',
       });
       let data = '';
       stream.on('data', (chunk: any) => {
@@ -27,7 +27,7 @@ async function chainGPTChat(question: string) {
         data += chunk.toString();
       });
       stream.on('end', () => {
-        console.log("Stream ended");
+        console.log('Stream ended');
         resolve(data);
       });
     } catch (error) {

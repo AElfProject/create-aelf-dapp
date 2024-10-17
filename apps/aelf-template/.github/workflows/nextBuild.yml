@@ -1,0 +1,13 @@
+name: Next Build
+
+on: [pull_request]
+
+jobs:
+  lint:
+    uses: ./.github/workflows/setup-node.yml
+    with:
+      cache-name: cache-node-modules
+
+    steps:
+      - name: Run Next Build
+        run: pnpm build

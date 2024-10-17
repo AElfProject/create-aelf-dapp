@@ -1,23 +1,27 @@
-'use client'
+'use client';
 import { WebLoginProvider, init } from '@aelf-web-login/wallet-adapter-react';
-import {useEffect, useState} from 'react';
-import {IBridgeAPI} from '@aelf-web-login/wallet-adapter-bridge';
-export default function Provider({
- children,
-}: {
-  children: React.ReactNode
-}) {
+import { useEffect, useState } from 'react';
+import { IBridgeAPI } from '@aelf-web-login/wallet-adapter-bridge';
+export default function Provider({ children }: { children: React.ReactNode }) {
   const [bridgeAPI, setBridgeAPI] = useState<IBridgeAPI>();
   useEffect(() => {
     const initBridgeAPI = async () => {
-      const { walletConnectConfig } = await import('@/app/lib/walletConnectConfig');
+      const { walletConnectConfig } = await import(
+        '@/app/lib/walletConnectConfig'
+      );
       const bridgeAPI = init(walletConnectConfig); // upper config
-      setBridgeAPI(bridgeAPI)
-    }
+      setBridgeAPI(bridgeAPI);
+    };
     initBridgeAPI();
   }, []);
 
-  return <>
-    {bridgeAPI ? <WebLoginProvider bridgeAPI={bridgeAPI}>{children}</WebLoginProvider>: <></>}
-  </>
+  return (
+    <>
+      {bridgeAPI ? (
+        <WebLoginProvider bridgeAPI={bridgeAPI}>{children}</WebLoginProvider>
+      ) : (
+        <></>
+      )}
+    </>
+  );
 }

@@ -38,7 +38,12 @@ lerna run build
 
 publish to npm
 ```bash
+# Publish all packages
 lerna publish
+
+# Publish single package
+cd apps/create-aelf-dapp
+npm publish
 ```
 
 rm node_modules
@@ -48,3 +53,9 @@ lerna clean
 rm -rf node_modules/
 ```
 
+## add dependence
+
+```bash
+# example
+pnpm install -C apps/aelf-template @ant-design/icons
+```

@@ -1,10 +1,10 @@
-'use client'
-import React, {useState} from "react";
+'use client';
+import React, { useState } from 'react';
 
-const uploadFileBlob = async(Code: any) => {
+const uploadFileBlob = async (Code: any) => {
   const formData = new FormData();
   const CodeBlob = new Blob([Code], { type: Code.type });
-  formData.append('Manifest', "blobFile.dll");
+  formData.append('Manifest', 'blobFile.dll');
   formData.append('Code', CodeBlob);
   // formData.append('Code', Code.originFileObj);
   console.log('Code', Code);
@@ -22,20 +22,20 @@ const uploadFileBlob = async(Code: any) => {
   });
   console.log(response);
   return 'res';
-}
+};
 
 const uploadFile = async (file: any) => {
   const formData = new FormData();
-  formData.append("file", file);
+  formData.append('file', file);
   // formData.append("file", file.ori);
 
-  const response = await fetch("/api/demos/file-upload", {
-    method: "POST",
+  const response = await fetch('/api/demos/file-upload', {
+    method: 'POST',
     body: formData,
   })
     .then((res) => res)
     .catch((err) => {
-      throw new Error("upload file failed");
+      throw new Error('upload file failed');
     });
 
   return response;
@@ -60,18 +60,20 @@ const FileUploadForm = () => {
     await uploadFileBlob(selectedFile);
   };
 
-  return <>
-    <form onSubmit={handleSubmit} encType='multipart/form-data'>
-      <input type='file' onChange={handleFileChange} />
-      <button type='submit'>upload file</button>
-    </form>
+  return (
+    <>
+      <form onSubmit={handleSubmit} encType="multipart/form-data">
+        <input type="file" onChange={handleFileChange} />
+        <button type="submit">upload file</button>
+      </form>
 
-    <div>Blob solution</div>
-    <form onSubmit={handleSubmitBlob} encType='multipart/form-data'>
-      <input type='file' onChange={handleFileChange} />
-      <button type='submit'>upload file blob</button>
-    </form>
-  </>;
+      <div>Blob solution</div>
+      <form onSubmit={handleSubmitBlob} encType="multipart/form-data">
+        <input type="file" onChange={handleFileChange} />
+        <button type="submit">upload file blob</button>
+      </form>
+    </>
+  );
 };
 
 export default FileUploadForm;

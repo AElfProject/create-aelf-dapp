@@ -1,0 +1,13 @@
+name: Test by jest
+
+on: [pull_request]
+
+jobs:
+  lint:
+    uses: ./.github/workflows/apps/aelf-template/setup-node.yml
+    with:
+      cache-name: cache-node-modules
+
+    steps:
+      - name: Run Jest Test
+        run: pnpm test
