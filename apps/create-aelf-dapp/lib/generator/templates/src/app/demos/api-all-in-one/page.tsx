@@ -8,16 +8,18 @@ import {
 } from '@tanstack/react-query';
 
 // Create a client
-const queryClient = new QueryClient()
+const queryClient = new QueryClient();
 
 export default function APIAllInOne() {
-  return <>
-    <QueryClientProvider client={queryClient}>
-      <p>api all in one.</p>
-      {/*<Todos />*/}
-      <Example />
-    </QueryClientProvider>
-  </>;
+  return (
+    <>
+      <QueryClientProvider client={queryClient}>
+        <p>api all in one.</p>
+        {/*<Todos />*/}
+        <Example />
+      </QueryClientProvider>
+    </>
+  );
 }
 
 function Example() {
@@ -26,14 +28,14 @@ function Example() {
     queryFn: async () => {
       const response = await fetch(
         'https://api.github.com/repos/TanStack/query',
-      )
-      return await response.json()
+      );
+      return await response.json();
     },
-  })
+  });
 
-  if (isPending) return 'Loading...'
+  if (isPending) return 'Loading...';
 
-  if (error) return 'An error has occurred: ' + error.message
+  if (error) return 'An error has occurred: ' + error.message;
 
   return (
     <div>
@@ -44,7 +46,7 @@ function Example() {
       <strong>🍴 {data.forks_count}</strong>
       <div>{isFetching ? 'Updating...' : ''}</div>
     </div>
-  )
+  );
 }
 
 //

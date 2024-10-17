@@ -1,4 +1,4 @@
-"use client"
+'use client';
 // import { HashAddress } from 'aelf-design';
 // import { Button } from 'antd';
 // import { Button } from 'aelf-design';
@@ -15,14 +15,24 @@ import { Input } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 
 export default function Page() {
-  return <>
-    <p>Get more components from <a href="https://ant.design/">https://ant.design/</a></p>
-    <Input placeholder="Basic usage" prefix={<UserOutlined />}/>
-    <p>Get more components from <a href="https://aelf-design.vercel.app">https://aelf-design.vercel.app</a></p>
-    {/*<HashAddress address="2DKgy7GafbrYWGnhSC3iSYgM9ZfudYS2KLLr1rDPLF9nZfWA6G" />*/}
-    {/*<HashAddress address="2DKgy7GafbrYWGnhSC3iSYgM9ZfudYS2KLLr1rDPLF9nZfWA6G" chain="tDVV" />*/}
-    {/*<HashAddress address="2DKgy7GafbrYWGnhSC3iSYgM9ZfudYS2KLLr1rDPLF9nZfWA6G" chain="tDVW" />*/}
-    <Button>Test antd-mobile</Button>
-    {/*<Button>Test aelf-design</Button>*/}
-  </>
+  return (
+    <>
+      <p>
+        Get more components from{' '}
+        <a href="https://ant.design/">https://ant.design/</a>
+      </p>
+      <Input placeholder="Basic usage" prefix={<UserOutlined />} />
+      <p>
+        Get more components from{' '}
+        <a href="https://aelf-design.vercel.app">
+          https://aelf-design.vercel.app
+        </a>
+      </p>
+      {/*<HashAddress address="2DKgy7GafbrYWGnhSC3iSYgM9ZfudYS2KLLr1rDPLF9nZfWA6G" />*/}
+      {/*<HashAddress address="2DKgy7GafbrYWGnhSC3iSYgM9ZfudYS2KLLr1rDPLF9nZfWA6G" chain="tDVV" />*/}
+      {/*<HashAddress address="2DKgy7GafbrYWGnhSC3iSYgM9ZfudYS2KLLr1rDPLF9nZfWA6G" chain="tDVW" />*/}
+      <Button>Test antd-mobile</Button>
+      {/*<Button>Test aelf-design</Button>*/}
+    </>
+  );
 }

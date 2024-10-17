@@ -1,15 +1,15 @@
-"use client";
-import { useState } from "react";
+'use client';
+import { useState } from 'react';
 import { Button, Input } from 'aelf-design';
 import { Space } from 'antd';
 
 import {
   changeName,
   getRandomNumberName,
-  selectName
-} from "@/app/lib/reduxToolkit/features/nickName/nickNameSlice";
+  selectName,
+} from '@/app/lib/reduxToolkit/features/nickName/nickNameSlice';
 
-import { useAppDispatch, useAppSelector } from "@/app/lib/reduxToolkit/hooks";
+import { useAppDispatch, useAppSelector } from '@/app/lib/reduxToolkit/hooks';
 
 export const NickName = () => {
   const dispatch = useAppDispatch();
@@ -19,16 +19,18 @@ export const NickName = () => {
   return (
     <div>
       <p>Nick Name: {nickName}</p>
-      <div className="mb-8 mt-8">
-        <Button
-          onClick={() => dispatch(getRandomNumberName())}
-        >Get Random Number Nick Name</Button>
+      <div className="my-8">
+        <Button onClick={() => dispatch(getRandomNumberName())}>
+          Get Random Number Nick Name
+        </Button>
       </div>
       <div>
-        <Input placeholder="Input your Nick Name" size="middle"
-               onChange={(e) => {
-                 setMyNickName(e.target.value)
-               }}
+        <Input
+          placeholder="Input your Nick Name"
+          size="middle"
+          onChange={(e) => {
+            setMyNickName(e.target.value);
+          }}
         />
         <Button
           onClick={() => {
@@ -36,9 +38,11 @@ export const NickName = () => {
               alert('Please input nick name or get random name');
               return;
             }
-            dispatch(changeName(myNickName))
+            dispatch(changeName(myNickName));
           }}
-        >Change name</Button>
+        >
+          Change name
+        </Button>
       </div>
     </div>
   );

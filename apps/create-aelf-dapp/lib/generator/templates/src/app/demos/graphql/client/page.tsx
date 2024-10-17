@@ -1,6 +1,8 @@
 'use client';
-import createApolloClient, {queryCountries} from '@/app/demos/graphql/apollo-client';
-import { ApolloProvider, useQuery } from "@apollo/client";
+import createApolloClient, {
+  queryCountries,
+} from '@/app/demos/graphql/apollo-client';
+import { ApolloProvider, useQuery } from '@apollo/client';
 
 const client = createApolloClient();
 export default function Client() {

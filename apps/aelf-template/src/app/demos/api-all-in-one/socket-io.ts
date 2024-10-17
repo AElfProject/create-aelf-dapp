@@ -4,11 +4,11 @@ import { io } from 'socket.io-client';
 import { IBaseRequestOptions } from '@/app/demos/api-all-in-one/fetch-data';
 
 export interface ISocketRequestOptions extends IBaseRequestOptions {
-  type: 'on' | 'emit'
-  event: string
-  value?: string
-  callback?: Function;
-  queryKey: string[]
+  type: 'on' | 'emit';
+  event: string;
+  value?: string;
+  callback?: (args: any) => any;
+  queryKey: string[];
   socketPath?: string;
 }
 
@@ -18,7 +18,7 @@ export const useWebSocket = (url: string, options: ISocketRequestOptions) => {
 
   useEffect(() => {
     const _socket = io({
-      path: url // '/socket-io/'
+      path: url, // '/socket-io/'
     });
 
     _socket.emit(options.event, options.value, (response: any) => {

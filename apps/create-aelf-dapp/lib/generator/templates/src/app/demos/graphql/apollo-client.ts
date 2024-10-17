@@ -1,7 +1,7 @@
-import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
+import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
 const createApolloClient = () => {
   return new ApolloClient({
-    uri: "https://countries.trevorblades.com",
+    uri: 'https://countries.trevorblades.com',
     cache: new InMemoryCache(),
   });
 };

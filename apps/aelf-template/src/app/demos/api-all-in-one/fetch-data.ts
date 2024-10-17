@@ -1,8 +1,11 @@
-import {createApolloClient, IApolloRequestOptions} from '@/app/demos/api-all-in-one/apollo-client';
-import {fetchData} from '@/app/demos/api-all-in-one/fetch';
-import { ApolloClient, gql } from "@apollo/client";
+import {
+  createApolloClient,
+  IApolloRequestOptions,
+} from '@/app/demos/api-all-in-one/apollo-client';
+import { fetchData } from '@/app/demos/api-all-in-one/fetch';
+import { ApolloClient, gql } from '@apollo/client';
 import { io, Socket } from 'socket.io-client';
-import {ISocketRequestOptions} from '@/app/demos/api-all-in-one/socket-io';
+import { ISocketRequestOptions } from '@/app/demos/api-all-in-one/socket-io';
 
 export interface IBaseRequestOptions {
   method?: string;
@@ -10,7 +13,9 @@ export interface IBaseRequestOptions {
   body?: any; // Record<string, any>;
 }
 
-export interface IRequestOptions extends ISocketRequestOptions, IApolloRequestOptions {}
+export interface IRequestOptions
+  extends ISocketRequestOptions,
+    IApolloRequestOptions {}
 
 export const defaultHeaders = {
   'Content-Type': 'application/json',
@@ -28,7 +33,7 @@ export class RequestAllInOne {
 
     if (options.socketPath) {
       this.socketClient = io({
-        path: options.socketPath
+        path: options.socketPath,
       });
     }
     if (options.apolloConfig) {
@@ -48,16 +53,18 @@ export class RequestAllInOne {
         ...this.headers,
         ...options.headers,
       },
-      body: options.body
+      body: options.body,
     });
   }
 
   async gql(url: string, options: IApolloRequestOptions = {}) {
     if (!this.apolloClient) {
-      throw Error('No apollo client found')
+      throw Error('No apollo client found');
     }
     const { data } = await this.apolloClient.query({
-      query: gql`${options.query}`,
+      query: gql`
+        ${options.query}
+      `,
     });
 
     return data;
@@ -67,7 +74,7 @@ export class RequestAllInOne {
     let socketClient = this.socketClient;
     if (this.options.socketPath !== url || !socketClient) {
       socketClient = io({
-        path: options.socketPath
+        path: options.socketPath,
       });
     }
     if (options.type === 'on') {
