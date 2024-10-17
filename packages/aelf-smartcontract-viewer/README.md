@@ -43,6 +43,7 @@ export default App;
 | `address`     | `string`      | `undefined`                                          | Address of the contract. If not provided, a default contract address is fetched from the Aelf blockchain.      |
 | `contractName`| `string`      | `"Contract"`                                         | The name of the contract to be displayed.                                                                     |
 | `rpcUrl`      | `string`      | `"https://explorer-test-side02.aelf.io/chain"`        | The RPC URL to connect to the Aelf blockchain.                                                                |
+| `theme`      | `light` or `dark`      | `"light"`        | Theme of contract view component |
 
 
 ## Example Explanation

@@ -18,6 +18,7 @@ interface IProps {
   address?: string;
   contractName?: string;
   rpcUrl?: string;
+  theme?: "light" | "dark";
 }
 
 const DEFAULT_RPC = rpcs[0].value;
@@ -29,6 +30,7 @@ export const ContractView = ({
   address,
   contractName = "Contract",
   rpcUrl = DEFAULT_RPC,
+  theme = "light",
 }: IProps) => {
   const [aelfWallet, setAelfWallet] = React.useState<IWalletInfo>();
   const [rpc, setRpc] = React.useState(rpcUrl);
@@ -107,7 +109,7 @@ export const ContractView = ({
   }, [address]);
 
   return (
-    <div className="contract-view-container">
+    <div className={`contract-view-container ${theme}`}>
       {headerShown && (
         <header className="flex justify-center w-full py-5 text-[16px] font-semibold align-middle border-b-2">
           {headerTitle}
