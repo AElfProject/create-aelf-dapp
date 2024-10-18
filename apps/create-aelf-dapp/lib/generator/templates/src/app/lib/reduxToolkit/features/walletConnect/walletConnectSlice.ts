@@ -1,5 +1,5 @@
-import { createAppSlice } from "@/app/lib/reduxToolkit/createAppSlice";
-import type { PayloadAction } from "@reduxjs/toolkit";
+import { createAppSlice } from '@/app/lib/reduxToolkit/createAppSlice';
+import type { PayloadAction } from '@reduxjs/toolkit';
 import { TWalletInfo } from '@aelf-web-login/wallet-adapter-base';
 
 export interface IWalletConnectSliceState {
@@ -12,14 +12,16 @@ const initialState: IWalletConnectSliceState = {
 
 // If you are not using async thunks you can use the standalone `createSlice`.
 export const walletConnectSlice = createAppSlice({
-  name: "walletConnect",
+  name: 'walletConnect',
   // `createSlice` will infer the state type from the `initialState` argument
   initialState,
   // The `reducers` field lets us define reducers and generate associated actions
   reducers: (create) => ({
-    setWalletInfo: create.reducer((state, action: PayloadAction<TWalletInfo>) => {
-      state.value = action.payload;
-    }),
+    setWalletInfo: create.reducer(
+      (state, action: PayloadAction<TWalletInfo>) => {
+        state.value = action.payload;
+      },
+    ),
     deleteWalletInfo: create.reducer((state) => {
       state.value = null;
     }),
@@ -34,12 +36,8 @@ export const walletConnectSlice = createAppSlice({
 });
 
 // Action creators are generated for each case reducer function.
-export const { setWalletInfo, deleteWalletInfo } =
-  walletConnectSlice.actions;
+export const { setWalletInfo, deleteWalletInfo } = walletConnectSlice.actions;
 
 // Selectors returned by `slice.selectors` take the root state as their first argument.
-export const {
-  getWalletInfo,
-  getWalletName,
-  getWalletAddress
-} = walletConnectSlice.selectors;
+export const { getWalletInfo, getWalletName, getWalletAddress } =
+  walletConnectSlice.selectors;

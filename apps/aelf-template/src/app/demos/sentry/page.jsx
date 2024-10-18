@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import Head from "next/head";
-import * as Sentry from "@sentry/nextjs";
+import Head from 'next/head';
+import * as Sentry from '@sentry/nextjs';
 import SButton from './components/Button';
 
 async function justThrowError(message) {
@@ -9,22 +9,23 @@ async function justThrowError(message) {
   throw Error(`Promise then, but not catch ${message}`);
 }
 
-const getData = (url) => new Promise((resolve, reject) => {
-  const req = new XMLHttpRequest();
-  req.open('GET', url, true);
-  req.setRequestHeader('Content-Type', 'application/json');
-  req.setRequestHeader('Accept', 'application/json');
-  // req.setRequestHeader('TraceId', 'trace-556688991');
-  req.onload = () => {
-    resolve(null);
-  };
-  req.onerror = () => {
-    reject();
-  };
-  req.send();
-});
+const getData = (url) =>
+  new Promise((resolve, reject) => {
+    const req = new XMLHttpRequest();
+    req.open('GET', url, true);
+    req.setRequestHeader('Content-Type', 'application/json');
+    req.setRequestHeader('Accept', 'application/json');
+    // req.setRequestHeader('TraceId', 'trace-556688991');
+    req.onload = () => {
+      resolve(null);
+    };
+    req.onerror = () => {
+      reject();
+    };
+    req.send();
+  });
 // const URL_TEST = 'https://httpbin.org/get';
-const URL_TEST = 'http://localhost:8093/sharp/api/app/book';
+const URL_TEST = '/v1/api/app/book';
 
 export default function Page() {
   return (
@@ -36,17 +37,17 @@ export default function Page() {
 
       <main
         style={{
-          minHeight: "100vh",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
+          minHeight: '100vh',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
         }}
       >
-        <h1 style={{ fontSize: "4rem", margin: "14px 0" }}>
+        <h1 style={{ fontSize: '4rem', margin: '14px 0' }}>
           <svg
             style={{
-              height: "1em",
+              height: '1em',
             }}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 200 44"
@@ -62,48 +63,58 @@ export default function Page() {
         <button
           type="button"
           style={{
-            padding: "12px",
-            cursor: "pointer",
-            backgroundColor: "#AD6CAA",
-            borderRadius: "4px",
-            border: "none",
-            color: "white",
-            fontSize: "14px",
-            margin: "18px",
+            padding: '12px',
+            cursor: 'pointer',
+            backgroundColor: '#AD6CAA',
+            borderRadius: '4px',
+            border: 'none',
+            color: 'white',
+            fontSize: '14px',
+            margin: '18px',
           }}
           onClick={async () => {
-            await Sentry.startSpan({
-              name: 'Example Frontend Span',
-              op: 'test'
-            }, async () => {
-              const res = await fetch("/api/demos/sentry-example-api");
-              if (!res.ok) {
-                throw new Error("Sentry Example Frontend Error");
-              }
-            });
+            await Sentry.startSpan(
+              {
+                name: 'Example Frontend Span',
+                op: 'test',
+              },
+              async () => {
+                const res = await fetch('/api/demos/sentry-example-api');
+                if (!res.ok) {
+                  throw new Error('Sentry Example Frontend Error');
+                }
+              },
+            );
           }}
         >
           Throw error!
         </button>
-        <SButton onClick={() => {
-          justThrowError('then').then(() => {
-            // do nothing here
-          });
-        }}>
+        <SButton
+          onClick={() => {
+            justThrowError('then').then(() => {
+              // do nothing here
+            });
+          }}
+        >
           Throw error with promise then
         </SButton>
-        <SButton onClick={async () => {
-          await justThrowError('await');
-        }}>
+        <SButton
+          onClick={async () => {
+            await justThrowError('await');
+          }}
+        >
           Throw error with promise await
         </SButton>
         <SButton onClick={() => getData(URL_TEST)}>getData</SButton>
         <p>
-          Next, look for the error on the{" "}
-          <a href="https://hzz780.sentry.io/issues/?project=4507309898727424">Issues Page</a>.
+          Next, look for the error on the{' '}
+          <a href="https://hzz780.sentry.io/issues/?project=4507309898727424">
+            Issues Page
+          </a>
+          .
         </p>
-        <p style={{ marginTop: "24px" }}>
-          For more information, see{" "}
+        <p style={{ marginTop: '24px' }}>
+          For more information, see{' '}
           <a href="https://docs.sentry.io/platforms/javascript/guides/nextjs/">
             https://docs.sentry.io/platforms/javascript/guides/nextjs/
           </a>

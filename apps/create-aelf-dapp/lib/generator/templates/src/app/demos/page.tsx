@@ -1,7 +1,11 @@
-'use client'
-export default function Page() {
+'use client';
+import ChatComponent from '@/components/ChatPAAL';
 
-  return <>
-    <h1>Hello</h1>
-  </>
+export default function Page() {
+  return (
+    <>
+      <h1>Hello</h1>
+      <ChatComponent />
+    </>
+  );
 }

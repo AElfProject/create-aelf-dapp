@@ -1,6 +1,6 @@
 {
   "name": "create-aelf-dapp",
-  "version": "0.1.5",
+  "version": "0.1.10",
   "description": "Create aelf Dapp based on Next.js with one command",
   "files": [
     "cli.js",
@@ -9,7 +9,8 @@
   ],
   "scripts": {
     "dev": "node cli.js",
-    "prettier": "prettier -c --write '**/*'"
+    "prettier": "prettier -c --write '**/*'",
+    "build": "sh template.prepare.sh"
   },
   "keywords": [
     "yeoman-generator",

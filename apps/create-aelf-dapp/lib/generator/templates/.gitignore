@@ -13,6 +13,8 @@
 /.next/
 /out/
 
+/.idea/
+
 # production
 /build
 
@@ -27,6 +29,7 @@ yarn-error.log*
 
 # local env files
 .env*.local
+.env
 
 # vercel
 .vercel
@@ -37,3 +40,11 @@ next-env.d.ts
 
 # Sentry Config File
 .env.sentry-build-plugin
+
+# npm pack local test
+package
+
+# git ls-files > filelist.txt
+filelist.txt
+
+.eslintcache

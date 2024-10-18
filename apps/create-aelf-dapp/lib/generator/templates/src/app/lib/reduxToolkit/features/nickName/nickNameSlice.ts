@@ -1,6 +1,6 @@
-import { createAppSlice } from "@/app/lib/reduxToolkit/createAppSlice";
-import type { AppThunk } from "@/app/lib/reduxToolkit/store";
-import type { PayloadAction } from "@reduxjs/toolkit";
+import { createAppSlice } from '@/app/lib/reduxToolkit/createAppSlice';
+import type { AppThunk } from '@/app/lib/reduxToolkit/store';
+import type { PayloadAction } from '@reduxjs/toolkit';
 
 export interface INickNameSliceState {
   value: string;
@@ -12,7 +12,7 @@ const initialState: INickNameSliceState = {
 
 // If you are not using async thunks you can use the standalone `createSlice`.
 export const nickNameSlice = createAppSlice({
-  name: "nickName",
+  name: 'nickName',
   // `createSlice` will infer the state type from the `initialState` argument
   initialState,
   // The `reducers` field lets us define reducers and generate associated actions
@@ -29,14 +29,12 @@ export const nickNameSlice = createAppSlice({
 });
 
 // Action creators are generated for each case reducer function.
-export const { changeName } =
-  nickNameSlice.actions;
+export const { changeName } = nickNameSlice.actions;
 
 // Selectors returned by `slice.selectors` take the root state as their first argument.
 export const { selectName } = nickNameSlice.selectors;
 
-export const getRandomNumberName =
-  (): AppThunk => (dispatch, getState) => {
-      const number = Math.ceil(Math.random() * 1000);
-      dispatch(changeName(number.toString()));
-    };
+export const getRandomNumberName = (): AppThunk => (dispatch, getState) => {
+  const number = Math.ceil(Math.random() * 1000);
+  dispatch(changeName(number.toString()));
+};
