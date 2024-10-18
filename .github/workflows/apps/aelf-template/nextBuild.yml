@@ -10,4 +10,4 @@ jobs:
 
     steps:
       - name: Run Next Build
-        run: pnpm build
+        run: pnpm run -C apps/aelf-template build
