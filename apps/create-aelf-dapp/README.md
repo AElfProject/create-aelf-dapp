@@ -27,7 +27,7 @@ Then open http://localhost:3000/ to see your app.
 ```bash
 yarn create aelf-dapp [appName]
 yarn dev # Development Environment
-# default： http://localhost:3000
+# default： http://localhost:3005
 ```
 
 #### 2.2.1.1 example

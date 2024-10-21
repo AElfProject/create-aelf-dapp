@@ -1,6 +1,6 @@
 {
   "name": "aelf-template-nextjs",
-  "version": "0.1.0",
+  "version": "0.1.13",
   "license": "MIT",
   "scripts": {
     "dev": "NODE_OPTIONS='--trace-warnings' next dev -p 3005",
@@ -43,6 +43,7 @@
     "@opentelemetry/sdk-trace-base": "^1.25.1",
     "@opentelemetry/sdk-trace-web": "^1.25.1",
     "@opentelemetry/semantic-conventions": "^1.25.1",
+    "@portkey/did-ui-react": "^2.13.2",
     "@reduxjs/toolkit": "^2.2.5",
     "@sentry/nextjs": "^8.4.0",
     "@sentry/opentelemetry": "^8.11.0",
@@ -51,15 +52,15 @@
     "aelf-sdk": "^3.4.12",
     "antd": "^5.18.0",
     "antd-mobile": "^5.36.1",
-    "chaingpt-component": "workspace:*",
+    "chaingpt-component": "0.2.0-beta.3",
     "graphql": "^16.9.0",
     "next": "14.2.10",
-    "opentelemetry-launcher": "workspace:*",
+    "opentelemetry-launcher": "^0.0.3",
     "react": "^18",
     "react-dom": "^18",
     "react-redux": "^9.1.2",
     "react-use": "^17.5.0",
-    "request-all-in-one": "workspace:*",
+    "request-all-in-one": "0.2.0-beta.0",
     "socket.io-client": "^4.7.5"
   },
   "devDependencies": {

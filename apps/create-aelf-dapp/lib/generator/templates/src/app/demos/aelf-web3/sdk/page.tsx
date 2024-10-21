@@ -2,6 +2,7 @@
 import AElf from 'aelf-sdk';
 import { useEffect, useState } from 'react';
 import { IToken } from '@/app/lib/interface/token';
+import { Button } from 'antd';
 
 const Wallet = AElf.wallet;
 // address: 2hxkDg6Pd2d4yU1A16PTZVMMrEDYEPR8oQojMDwWdax5LsBaxX
@@ -30,7 +31,7 @@ export default function AelfSDK() {
   return (
     <>
       <div>{tokenContract ? 'ready' : 'not ready'}</div>
-      <div
+      <Button
         onClick={async () => {
           if (!tokenContract) {
             throw Error('Please wait for contract init');
@@ -43,7 +44,7 @@ export default function AelfSDK() {
       >
         {' '}
         Click to get token info
-      </div>
+      </Button>
       <pre>{JSON.stringify(tokenInfo, null, 2)}</pre>
     </>
   );

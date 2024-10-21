@@ -43,6 +43,7 @@
     "@opentelemetry/sdk-trace-base": "^1.25.1",
     "@opentelemetry/sdk-trace-web": "^1.25.1",
     "@opentelemetry/semantic-conventions": "^1.25.1",
+    "@portkey/did-ui-react": "^2.13.2",
     "@reduxjs/toolkit": "^2.2.5",
     "@sentry/nextjs": "^8.4.0",
     "@sentry/opentelemetry": "^8.11.0",
