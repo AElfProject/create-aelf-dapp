@@ -49,7 +49,7 @@
     "@sentry/opentelemetry": "^8.11.0",
     "@tanstack/react-query": "^5.51.1",
     "aelf-design": "^1.1.0",
-    "aelf-sdk": "^3.4.12",
+    "aelf-sdk": "3.4.17-alpha.1",
     "antd": "^5.18.0",
     "antd-mobile": "^5.36.1",
     "chaingpt-component": "workspace:*",
