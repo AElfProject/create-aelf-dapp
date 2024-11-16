@@ -1,11 +1,11 @@
 import * as React from "react";
-import { useMemo, useState } from 'react';
-import clsx from 'clsx';
-import { IWalletInfo } from 'aelf-sdk/types/wallet';
+import { useMemo, useState } from "react";
+import clsx from "clsx";
+import { IWalletInfo } from "aelf-sdk/types/wallet";
 
-import './index.css';
-import { IMethod } from '../../interfaces/index';
-import DynamicForm from '../DynamicForm/index';
+import "./index.css";
+import { IMethod } from "../../interfaces/index";
+import DynamicForm from "../DynamicForm/index";
 
 interface IReadWriteContractProps {
   readMethods: IMethod[];
@@ -16,9 +16,36 @@ interface IReadWriteContractProps {
 }
 
 enum ItemKey {
-  READ_CONTRACT = 'readContract',
-  WRITE_CONTRACT = 'writeContract',
+  READ_CONTRACT = "readContract",
+  WRITE_CONTRACT = "writeContract",
 }
+
+const ContractTabHeader = ({
+  items,
+  activeKey,
+  onTabChange,
+}: {
+  items: { key: ItemKey; label: string }[];
+  activeKey: ItemKey;
+  onTabChange: (key: ItemKey) => void;
+}) => (
+  <ul className="contract-button-container flex gap-[9px]">
+    {items.map(({ key, label }) => (
+      <li key={key} className="contract-button">
+        <button
+          type="button"
+          className={clsx(
+            "contract-button-link",
+            activeKey === key && "active-button-link"
+          )}
+          onClick={() => onTabChange(key)}
+        >
+          <span>{label}</span>
+        </button>
+      </li>
+    ))}
+  </ul>
+);
 
 export default function ReadWriteContract({
   readMethods,
@@ -27,17 +54,13 @@ export default function ReadWriteContract({
   wallet,
   disabled,
 }: IReadWriteContractProps) {
-  const [activeKey, setActiveKey] = useState(ItemKey.READ_CONTRACT);
+  const [activeKey, setActiveKey] = useState<ItemKey>(ItemKey.READ_CONTRACT);
 
-  const tabChange = (key: ItemKey) => {
-    setActiveKey(key);
-  };
-
-  const items = useMemo(() => {
-    return [
+  const items = useMemo(
+    () => [
       {
         key: ItemKey.READ_CONTRACT,
-        label: 'Read Contract',
+        label: "Read Contract",
         children: (
           <DynamicForm
             methods={readMethods}
@@ -49,7 +72,7 @@ export default function ReadWriteContract({
       },
       {
         key: ItemKey.WRITE_CONTRACT,
-        label: 'Write Contract',
+        label: "Write Contract",
         children: (
           <DynamicForm
             methods={writeMethods}
@@ -59,48 +82,31 @@ export default function ReadWriteContract({
           />
         ),
       },
-    ];
-  }, [contract, readMethods, writeMethods, wallet, disabled]);
+    ],
+    [contract, readMethods, writeMethods, wallet, disabled]
+  );
 
   return (
     <div className="contract-container">
       <div className="pb-5">
-        <ul className="contract-button-container flex gap-[9px]">
-          {items.map((item) => {
-            return (
-              <li
-                key={item.key}
-                className="contract-button"
-                onClick={() => tabChange(item.key)}
-              >
-                <a
-                  className={clsx(
-                    'contract-button-link',
-                    activeKey === item.key && 'active-button-link',
-                  )}
-                  href="javascript:;"
-                >
-                  <span>{item.label}</span>
-                </a>
-              </li>
-            );
-          })}
-        </ul>
+        <ContractTabHeader
+          items={items.map(({ key, label }) => ({ key, label }))}
+          activeKey={activeKey}
+          onTabChange={setActiveKey}
+        />
       </div>
       <div className="contract-pane-container">
-        {items.map((item) => {
-          return (
-            <div
-              className={clsx(
-                'contract-pane',
-                activeKey === item.key ? 'block' : 'hidden',
-              )}
-              key={item.key}
-            >
-              {item.children}
-            </div>
-          );
-        })}
+        {items.map(({ key, children }) => (
+          <div
+            className={clsx(
+              "contract-pane",
+              activeKey === key ? "block" : "hidden"
+            )}
+            key={key}
+          >
+            {children}
+          </div>
+        ))}
       </div>
     </div>
   );
