@@ -1,4 +1,4 @@
-function processResponse(response: any) {
+const processResponse = (response: any) => {
   const key = Object.keys(response)[0];
   let value = response[key];
   let valueType: string;
@@ -15,6 +15,6 @@ function processResponse(response: any) {
   }
 
   return { key, value, valueType };
-}
+};
 
 export default processResponse;

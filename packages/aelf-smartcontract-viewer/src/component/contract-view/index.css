@@ -9,7 +9,6 @@
 }
 
 .contract-view-container .box-wrapper {
-
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -17,6 +16,10 @@
     border-radius: 20px;
     border: 1px solid #eee;
     box-shadow: 0 0 10px 0 #e2e2e2;
+}
+
+@media (max-width: 577px) {
+    .contract-view-container .box-wrapper { padding: 15px; }
 }
 
 .contract-view-container.light {

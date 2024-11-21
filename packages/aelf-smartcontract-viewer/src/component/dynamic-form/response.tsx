@@ -44,7 +44,7 @@ const ResponseDisplay = ({ response }: { response: any }) => {
       {key.toLocaleLowerCase() === "transactionid" ? (
         <a
           href={
-            `https://explorer-test-side02.aelf.io/tx/` +
+            `https://testnet.aelfscan.io/tDVW/tx/` +
             formatValue(value, valueType)
           }
           target="_blank"

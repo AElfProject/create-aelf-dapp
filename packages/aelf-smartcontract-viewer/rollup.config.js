@@ -1,7 +1,7 @@
 import { defineConfig } from "rollup";
 import typescript from "@rollup/plugin-typescript";
-import url from '@rollup/plugin-url';
-import postcss from 'rollup-plugin-postcss';
+import url from "@rollup/plugin-url";
+import postcss from "rollup-plugin-postcss";
 
 export default defineConfig({
   input: "src/index.ts",
@@ -11,16 +11,20 @@ export default defineConfig({
     name: "npm-contract-viewer",
   },
   external: [
-    'react', 
-    'react-dom',
-    'antd', 
-    '@portkey/contracts', 
-    '@portkey/request',
-    'aelf-sdk',
-    'clsx',
-    'copy-to-clipboard',
-    'query-string',
-    'react-json-tree'
+    "react",
+    "react-dom",
+    "@portkey/contracts",
+    "@portkey/request",
+    "aelf-sdk",
+    "clsx",
+    "copy-to-clipboard",
+    "query-string",
+    "react-json-tree",
+    "framer-motion",
+    "react-hook-form",
+    "react-hot-toast",
+    "tailwind-merge",
+    "zod",
   ],
   plugins: [
     typescript({ tsconfig: "tsconfig.json" }),
@@ -29,7 +33,7 @@ export default defineConfig({
       limit: 0, // No file size limit
     }),
     postcss({
-      extensions: ['.css'], // Specify that we are handling CSS files
+      extensions: [".css"], // Specify that we are handling CSS files
     }),
   ],
 });

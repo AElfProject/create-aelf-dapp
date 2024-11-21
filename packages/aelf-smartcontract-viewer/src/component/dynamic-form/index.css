@@ -73,3 +73,27 @@
   border-radius: 10px;
   border: 1px solid #e7e7e7;
 }
+
+.accordion-container{
+  border-radius: 7px;
+  border: 1px solid #e7e7e7;
+  padding-inline: 0;
+}
+
+.accordion-container section, .accordion-container .accordion-item h2{
+  padding-inline: 1rem;
+}
+
+.accordion-item h2{
+ background-color: #eceef2;
+ border-radius: 7px 7px 0 0;
+}
+
+.accordion-item h2 button{
+  padding-block: 3px;
+  outline: none;
+}
+
+.accordion-item h2 button .label{
+  font-size: 13px;
+}
