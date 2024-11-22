@@ -1,14 +1,15 @@
 import * as React from "react";
 import { IWalletInfo } from "aelf-sdk/types/wallet";
 import AElf from "aelf-sdk";
-import { message } from "antd";
+import toast, { Toaster } from "react-hot-toast";
+import { NextUIProvider } from "@nextui-org/react";
 
 import "./index.css";
 import { useGetContract } from "../../hooks/useGetContract";
 import { rpcs } from "../../constant";
-import NormalFormItem from "../NormalFormItem/index";
+import NormalFormItem from "../formal-form-field/index";
 import { ISelectOption } from "../../interfaces/index";
-import ReadWriteContract from "../ReadWriteContract/index";
+import ReadWriteContract from "../read-write-contract/index";
 import { getAElf } from "../../utilities/index";
 
 interface IProps {
@@ -55,7 +56,7 @@ export const ContractView = ({
 
   const getDefaultContract = async (rpcValue: string) => {
     let WALLET;
-    const hide = message.loading("Get contract in progress..", 0);
+    const toastId = toast.loading("Get contract in progress..");
     try {
       if (wallet) {
         setAelfWallet(wallet);
@@ -67,10 +68,6 @@ export const ContractView = ({
       }
 
       if (WALLET && !address) {
-        await fetch(
-          `https://faucet.aelf.dev/api/claim?walletAddress=${WALLET.address}`,
-          { method: "POST" }
-        );
         const aelfInstance = getAElf(rpcValue);
         const tokenContractName = "AElf.ContractNames.Token";
         const chainStatus = await aelfInstance.chain.getChainStatus();
@@ -90,9 +87,9 @@ export const ContractView = ({
         setContractAddress(tokenContractAddress);
       }
     } catch (error) {
-      message.error(`Get contract error: ${error}`);
+      toast.error(`Get contract error: ${error}`);
     } finally {
-      hide();
+      toast.dismiss(toastId);
     }
   };
 
@@ -106,46 +103,50 @@ export const ContractView = ({
     if (wallet) {
       setAelfWallet(wallet);
     }
-  }, [address]);
-
+  }, [address, wallet]);
+  const defaultContent =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
   return (
-    <div className={`contract-view-container ${theme}`}>
-      {headerShown && (
-        <header className="flex justify-center w-full py-5 text-[16px] font-semibold align-middle border-b-2">
-          {headerTitle}
-        </header>
-      )}
-      <div className="flex flex-col gap-6 px-4 py-6 w-full">
-        <div className="box-wrapper">
-          <NormalFormItem
-            options={rpcOptions}
-            selectedItem={rpc}
-            onOptionsChange={(options) => setRpcOptions(options)}
-            onSelectChange={handleRpcChange}
-            title="RPC"
-            buttonText="Add rpc"
-            disabled={isLoading}
-          />
-          <NormalFormItem
-            options={contractOptions}
-            selectedItem={contractAddress}
-            onOptionsChange={(options) => setContractOptions(options)}
-            onSelectChange={handleContractChange}
-            title="Contract"
-            buttonText="Add contract"
-            disabled={isLoading}
-          />
-        </div>
-        <div className="box-wrapper">
-          <ReadWriteContract
-            readMethods={readMethods}
-            writeMethods={writeMethods}
-            contract={contract}
-            wallet={aelfWallet}
-            disabled={isLoading}
-          />
+    <NextUIProvider>
+      <div className={`contract-view-container ${theme}`}>
+        <Toaster />
+        {headerShown && (
+          <header className="flex justify-center w-full py-5 text-[16px] font-semibold align-middle border-b-2">
+            {headerTitle}
+          </header>
+        )}
+        <div className="flex flex-col gap-6 px-4 py-6 w-full">
+          <div className="box-wrapper">
+            <NormalFormItem
+              options={rpcOptions}
+              selectedItem={rpc}
+              onOptionsChange={(options) => setRpcOptions(options)}
+              onSelectChange={handleRpcChange}
+              title="RPC"
+              buttonText="Add rpc"
+              disabled={isLoading}
+            />
+            <NormalFormItem
+              options={contractOptions}
+              selectedItem={contractAddress}
+              onOptionsChange={(options) => setContractOptions(options)}
+              onSelectChange={handleContractChange}
+              title="Contract"
+              buttonText="Add contract"
+              disabled={isLoading}
+            />
+          </div>
+          <div className="box-wrapper">
+            <ReadWriteContract
+              readMethods={readMethods}
+              writeMethods={writeMethods}
+              contract={contract}
+              wallet={aelfWallet}
+              disabled={isLoading}
+            />
+          </div>
         </div>
       </div>
-    </div>
+    </NextUIProvider>
   );
 };

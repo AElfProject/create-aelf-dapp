@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import { message } from "antd";
+import toast from 'react-hot-toast';
 import { IWalletInfo } from "aelf-sdk/types/wallet/index";
 import { getContractMethods } from "@portkey/contracts";
 
@@ -24,19 +24,15 @@ export const useGetContract = ({ wallet, rpc, contractAddress }: IProps) => {
         return;
       }
       setIsLoading(true);
-      const hide = message.loading("Get Contract's Methods in progress..", 0);
+      const toastId = toast.loading("Get Contract's Methods in progress..");
       try {
-        await fetch(
-          `https://faucet.aelf.dev/api/claim?walletAddress=${wallet.address}`,
-          { method: "POST" }
-        );
         const result = await getMethod(rpcValue, contractAddress, wallet);
-        if(result === "success") message.success("Get Contract's Methods success!");
+        if(result === "success") toast.success("Get Contract's Methods success!");
       } catch (error) {
-        message.error(`Contract's Methods error: ${error}`);
+        toast.error(`Contract's Methods error: ${error}`);
       } finally {
         setIsLoading(false);
-        hide();
+        toast.dismiss(toastId);
       }
     },
     [contractAddress,wallet]
@@ -52,10 +48,10 @@ export const useGetContract = ({ wallet, rpc, contractAddress }: IProps) => {
         if (response.ok) {
           viewMethod = await response.json();
         } else {
-          message.error("ContractViewMethodList error");
+          toast.error("ContractViewMethodList error");
         }
       } catch (error) {
-        message.error(`ContractViewMethodList error: ${error}`);
+        toast.error(`ContractViewMethodList error: ${error}`);
       }
       const res: IMethod[] = [];
       const readRes: IMethod[] = [];
@@ -114,7 +110,7 @@ export const useGetContract = ({ wallet, rpc, contractAddress }: IProps) => {
         setReadMethods(readMethods);
         return "success"
       } catch (error) {
-        message.error(`Get methods error: ${error}`);
+        toast.error(`Get methods error: ${error}`);
         return "error"
       }
     },
