@@ -1,44 +1,42 @@
 {
   "name": "aelf-smartcontract-viewer",
-  "version": "1.0.10",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "version": "1.1.0",
   "type": "module",
-  "scripts": {
-    "build": "npx rollup -c",
-    "dev": "vite"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/AElfProject/create-aelf-dapp/tree/main/packages/aelf-smartcontract-viewer"
-  },
-  "description": "A React component to view and interact with Aelf smart contracts",
-  "keywords": [
-    "aelf",
-    "smart contracts",
-    "blockchain",
-    "react",
-    "contract viewer",
-    "aelf-sdk",
-    "dapp"
+  "main": "dist/aelf-smartcontract-viewer.js",
+  "types": "dist/aelf-smartcontract-viewer.umd.cjs",
+  "files": [
+    "dist"
   ],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@rollup/plugin-babel": "^6.0.4",
-    "@rollup/plugin-typescript": "^12.1.0",
-    "@rollup/plugin-url": "^8.0.2",
-    "@types/loadable__component": "^5.13.9",
-    "@types/react": "^18.3.10",
-    "@vitejs/plugin-react": "^4.3.2",
-    "postcss": "^8.4.47",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "prepublishOnly": "npm run build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "path": "^0.12.7",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "rollup": "^4.22.5",
-    "rollup-plugin-postcss": "^4.0.2",
-    "tailwindcss": "^3.4.13",
-    "tslib": "^2.7.0",
-    "vite": "^5.4.8"
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "@types/node": "^22.9.3",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "eslint": "^9.13.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.14",
+    "glob": "^11.0.0",
+    "globals": "^15.11.0",
+    "typescript": "~5.6.2",
+    "typescript-eslint": "^8.11.0",
+    "vite": "^5.4.10",
+    "vite-plugin-dts": "^4.3.0",
+    "vite-plugin-lib-inject-css": "^2.1.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
@@ -54,5 +52,8 @@
     "react-json-tree": "^0.19.0",
     "tailwind-merge": "^2.5.4",
     "zod": "^3.23.8"
-  }
+  },
+  "sideEffects": [
+    "**/*.css"
+  ]
 }
