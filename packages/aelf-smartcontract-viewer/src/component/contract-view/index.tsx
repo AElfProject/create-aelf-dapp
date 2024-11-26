@@ -6,11 +6,11 @@ import { NextUIProvider } from "@nextui-org/react";
 
 import "./index.css";
 import { useGetContract } from "../../hooks/useGetContract";
-import { rpcs } from "../../constant";
 import NormalFormItem from "../formal-form-field/index";
 import { ISelectOption } from "../../interfaces/index";
 import ReadWriteContract from "../read-write-contract/index";
 import { getAElf } from "../../utilities/index";
+import { rpcs } from "../../constant";
 
 interface IProps {
   wallet?: IWalletInfo;
@@ -24,21 +24,20 @@ interface IProps {
 
 const DEFAULT_RPC = rpcs[0].value;
 
-export const ContractView = ({
-  wallet,
-  headerTitle = "Aelf Contract View",
-  headerShown = true,
-  address,
-  contractName = "Contract",
-  rpcUrl = DEFAULT_RPC,
-  theme = "light",
-}: IProps) => {
+export const ContractView = (props: IProps) => {
+  const {
+    wallet,
+    headerTitle = "Aelf Contract View",
+    headerShown = true,
+    address,
+    contractName = "Contract",
+    rpcUrl = DEFAULT_RPC,
+    theme = "light",
+  } = props;
   const [aelfWallet, setAelfWallet] = React.useState<IWalletInfo>();
   const [rpc, setRpc] = React.useState(rpcUrl);
   const [rpcOptions, setRpcOptions] = React.useState(rpcs);
-  const [contractOptions, setContractOptions] = React.useState<ISelectOption[]>(
-    []
-  );
+  const [contractOptions, setContractOptions] = React.useState<ISelectOption[]>([]);
   const [contractAddress, setContractAddress] = React.useState(address || "");
   const { contract, writeMethods, readMethods, isLoading } = useGetContract({
     rpc,
