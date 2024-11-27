@@ -1,6 +1,6 @@
 {
   "name": "aelf-smartcontract-viewer",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "type": "module",
   "main": "dist/aelf-smartcontract-viewer.js",
   "types": "dist/aelf-smartcontract-viewer.umd.cjs",

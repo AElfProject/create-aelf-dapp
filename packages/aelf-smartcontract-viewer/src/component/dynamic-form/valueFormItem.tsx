@@ -16,12 +16,14 @@ interface ValueFormItemProps {
   data: IInputItem;
   setFieldValue: (key: string, value: string) => void;
   type: string;
+  inputValue: string | number;
   disabled: boolean;
   props?: React.InputHTMLAttributes<HTMLInputElement>;
 }
 
 const ValueFormItem: React.FC<ValueFormItemProps> = ({
   data,
+  inputValue,
   setFieldValue,
   type,
   disabled,
@@ -156,6 +158,8 @@ const ValueFormItem: React.FC<ValueFormItemProps> = ({
       <Input
         type="text"
         radius="none"
+        // @ts-ignore
+        value={inputValue}
         // @ts-ignore
         size="sm"
         className="border-[1px] my-2"

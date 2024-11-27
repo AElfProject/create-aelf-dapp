@@ -100,3 +100,8 @@
 .contract-view-container.dark .ant-collapse-content {
     border-color: #eee5 !important;
 }
+
+.contract-view-container.dark .accordion-item h2{
+    background-color: #fff1;
+    border-radius: 7px 7px 0 0;
+   }
