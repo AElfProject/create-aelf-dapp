@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import { Divider, Input, Button } from "@nextui-org/react";
 import { useForm } from "react-hook-form";
 import { IWalletInfo } from "aelf-sdk/types/wallet";
@@ -43,24 +43,32 @@ const FormItem: React.FC<FormItemProps> = ({
   wallet,
   disabled,
 }) => {
-  const { handleSubmit, control, watch, setValue } = useForm();
+  const { handleSubmit, control, watch, setValue } = useForm({});
   const [response, setResponse] = useState<any>(null);
   const [loading, setLoading] = useState<boolean>(false);
+  const [isSubmittable, setIsSubmittable] = useState(false);
 
   const values = watch();
-  const isSubmittable = useMemo(
-    () => Object.values(values).every((item) => item || item === 0),
-    [values]
-  );
+
+  useEffect(() => {
+    if (Object.values(values).every((item) => item || item === 0)) {
+      setIsSubmittable(true);
+    } else {
+      setIsSubmittable(false);
+    }
+  }, [values]);
 
   const handleContractCall = async (data: any, isWrite: boolean) => {
     setLoading(true);
+    console.log("isWrite", isWrite, (Object.keys(data).length && data) || {});
     try {
       const result = isWrite
-        ? await contract[name](data)
-        : await contract[name].call(data || {});
+        ? await contract[name](Object.keys(data).length && (data || {}))
+        : await contract[name].call(Object.keys(data).length && (data || {}));
+      console.log("result", result);
       setResponse(result || { data: null });
     } catch (e: any) {
+      console.log("error", e);
       setResponse(e instanceof Error ? formatError(e) : e);
     } finally {
       setLoading(false);
@@ -79,9 +87,11 @@ const FormItem: React.FC<FormItemProps> = ({
         {ele.type === "int64" ? (
           <ValueFormItem
             data={ele}
+            inputValue={values[ele.name]}
             type={ele.type}
             setFieldValue={setValue}
             disabled={disabled}
+            props={{ ...control.register(ele.name) }}
           />
         ) : (
           <>
